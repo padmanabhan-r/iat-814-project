@@ -1,0 +1,1194 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0119.2058                               -->
+<workbook original-version='18.1' source-build='2019.4.2 (20194.20.0119.2058)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Admissions_15842214651050' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Admission Log (Patient Log)' inline='true' name='federated.1frm8hu0doi3nx17e9ych0bartcm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Patient Log' name='excel-direct.1xv54w11dxfopn199a4se0s2t2nb'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Paddy/Desktop/Patient Log.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1xv54w11dxfopn199a4se0s2t2nb' name='Admission Log' table='[&apos;Admission Log$&apos;]' type='table'>
+          <columns gridOrigin='A1:F270:no:A1:F270:0' header='yes' outcome='2'>
+            <column datatype='date' date-parse-format='yyyy-MM-dd' name='AdmitDate' ordinal='0' />
+            <column datatype='datetime' name='AdmitTime' ordinal='1' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm' name='AdmitDateTime' ordinal='2' />
+            <column datatype='string' name='PatientID' ordinal='3' />
+            <column datatype='string' name='AdmitUnit' ordinal='4' />
+            <column datatype='string' name='AdmitBedNum' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Admission Log]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F270:no:A1:F270:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AdmitDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[AdmitDate]</local-name>
+            <parent-name>[Admission Log]</parent-name>
+            <remote-alias>AdmitDate</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AdmitTime</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[AdmitTime]</local-name>
+            <parent-name>[Admission Log]</parent-name>
+            <remote-alias>AdmitTime</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AdmitDateTime</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[AdmitDateTime]</local-name>
+            <parent-name>[Admission Log]</parent-name>
+            <remote-alias>AdmitDateTime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PatientID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PatientID]</local-name>
+            <parent-name>[Admission Log]</parent-name>
+            <remote-alias>PatientID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AdmitUnit</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[AdmitUnit]</local-name>
+            <parent-name>[Admission Log]</parent-name>
+            <remote-alias>AdmitUnit</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AdmitBedNum</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[AdmitBedNum]</local-name>
+            <parent-name>[Admission Log]</parent-name>
+            <remote-alias>AdmitBedNum</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Bed Number' datatype='string' name='[AdmitBedNum]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='datetime' name='[AdmitDateTime]' role='dimension' type='quantitative' />
+      <column datatype='date' hidden='true' name='[AdmitDate]' role='dimension' type='ordinal' />
+      <column datatype='datetime' hidden='true' name='[AdmitTime]' role='dimension' type='ordinal' />
+      <column caption='Unit' datatype='string' name='[AdmitUnit]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[AdmitUnit]' derivation='None' name='[none:AdmitUnit:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/Paddy/Documents/My Tableau Repository/Datasources/Admission Log (Patient Log).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/14/2020 07:57:08 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Admission Log (Patient Log)' increment-value='%null%' refresh-type='create' rows-inserted='269' timestamp-start='2020-03-14 19:57:08.322' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>AdmitDateTime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[AdmitDateTime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AdmitDateTime</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Admission Log</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>268</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PatientID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PatientID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PatientID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Admission Log</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>91</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AdmitUnit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AdmitUnit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AdmitUnit</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Admission Log</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AdmitBedNum</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AdmitBedNum]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AdmitBedNum</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Admission Log</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.55698' measure-ordering='alphabetic' measure-percentage='0.44302' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:AdmitUnit:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;1E&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;3N&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;3M&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;4E&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;3S&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;4W&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2C&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;3R&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1W&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;3W&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Dischargelog (Patient Log)' inline='true' name='federated.0gq6cyy06gk6t714y2c1k18dolrc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Patient Log' name='excel-direct.1fzqh8g15g8dmx1ba9q160dtt27u'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Paddy/Desktop/Patient Log.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1fzqh8g15g8dmx1ba9q160dtt27u' name='Dischargelog' table='[Dischargelog$]' type='table'>
+          <columns gridOrigin='A1:E72:no:A1:E72:0' header='yes' outcome='2'>
+            <column datatype='string' name='PatientID' ordinal='0' />
+            <column datatype='datetime' name='AdmitDateTime' ordinal='1' />
+            <column datatype='datetime' name='DisChargeDateTime' ordinal='2' />
+            <column datatype='string' name='Unit' ordinal='3' />
+            <column datatype='string' name='BedNum' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>PatientID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PatientID]</local-name>
+            <parent-name>[Dischargelog]</parent-name>
+            <remote-alias>PatientID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AdmitDateTime</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[AdmitDateTime]</local-name>
+            <parent-name>[Dischargelog]</parent-name>
+            <remote-alias>AdmitDateTime</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DisChargeDateTime</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DisChargeDateTime]</local-name>
+            <parent-name>[Dischargelog]</parent-name>
+            <remote-alias>DisChargeDateTime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unit</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Unit]</local-name>
+            <parent-name>[Dischargelog]</parent-name>
+            <remote-alias>Unit</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BedNum</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BedNum]</local-name>
+            <parent-name>[Dischargelog]</parent-name>
+            <remote-alias>BedNum</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Dischargelog]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E72:no:A1:E72:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Duration' datatype='integer' name='[Calculation_2250673943027249152]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;,[AdmitDateTime],[DisChargeDateTime])' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.555556' measure-ordering='alphabetic' measure-percentage='0.444444' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Admission By Date'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Admissions By Date(Historic)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Admission Log (Patient Log)' name='federated.1frm8hu0doi3nx17e9ych0bartcm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1frm8hu0doi3nx17e9ych0bartcm'>
+            <column caption='Date' datatype='datetime' name='[AdmitDateTime]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AdmitDateTime]' derivation='Week-Trunc' name='[twk:AdmitDateTime:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1frm8hu0doi3nx17e9ych0bartcm].[twk:AdmitDateTime:qk]' field-type='quantitative' max='#2019-07-06 10:51:48.370#' min='#2019-02-17 13:08:11.630#' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1frm8hu0doi3nx17e9ych0bartcm].[sum:Number of Records:qk]' field-type='quantitative' max='25' min='0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1frm8hu0doi3nx17e9ych0bartcm].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1frm8hu0doi3nx17e9ych0bartcm].[twk:AdmitDateTime:qk]</cols>
+      </table>
+      <simple-id uuid='{432DC180-651C-4E0B-930A-5C10619BCAEF}' />
+    </worksheet>
+    <worksheet name='Admission By Unit'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Admission By Unit</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Admission Log (Patient Log)' name='federated.1frm8hu0doi3nx17e9ych0bartcm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1frm8hu0doi3nx17e9ych0bartcm'>
+            <column caption='Date' datatype='datetime' name='[AdmitDateTime]' role='dimension' type='quantitative' />
+            <column caption='Unit' datatype='string' name='[AdmitUnit]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[AdmitDateTime]' derivation='MDY' name='[md:AdmitDateTime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[AdmitUnit]' derivation='None' name='[none:AdmitUnit:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]' filter-group='4'>
+            <groupfilter function='member' level='[md:AdmitDateTime:ok]' member='20190529' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1frm8hu0doi3nx17e9ych0bartcm].[sum:Number of Records:qk]' scope='cols' value='Number of Admits' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+            <encoding attr='space' class='0' field='[federated.1frm8hu0doi3nx17e9ych0bartcm].[sum:Number of Records:qk]' field-type='quantitative' max='2' min='0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]' value='Date'>
+              <formatted-text>
+                <run bold='true' fontsize='14'>Date</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1frm8hu0doi3nx17e9ych0bartcm].[none:AdmitUnit:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows include-empty='true'>[federated.1frm8hu0doi3nx17e9ych0bartcm].[none:AdmitUnit:nk]</rows>
+        <cols include-empty='true'>[federated.1frm8hu0doi3nx17e9ych0bartcm].[sum:Number of Records:qk]</cols>
+      </table>
+      <simple-id uuid='{49298CC1-CC15-4213-867E-D5FCBCB2A2C9}' />
+    </worksheet>
+    <worksheet name='Admitted To Bed'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>New Admissions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Admission Log (Patient Log)' name='federated.1frm8hu0doi3nx17e9ych0bartcm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1frm8hu0doi3nx17e9ych0bartcm'>
+            <column caption='Bed Number' datatype='string' name='[AdmitBedNum]' role='dimension' type='nominal' />
+            <column caption='Date' datatype='datetime' name='[AdmitDateTime]' role='dimension' type='quantitative' />
+            <column caption='Unit' datatype='string' name='[AdmitUnit]' role='dimension' type='nominal' />
+            <column datatype='string' name='[PatientID]' role='dimension' type='nominal' />
+            <column-instance column='[AdmitDateTime]' derivation='MDY' name='[md:AdmitDateTime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[AdmitBedNum]' derivation='None' name='[none:AdmitBedNum:nk]' pivot='key' type='nominal' />
+            <column-instance column='[AdmitUnit]' derivation='None' name='[none:AdmitUnit:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PatientID]' derivation='None' name='[none:PatientID:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]' filter-group='4'>
+            <groupfilter function='member' level='[md:AdmitDateTime:ok]' member='20190529' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1frm8hu0doi3nx17e9ych0bartcm].[none:AdmitBedNum:nk]' value='120' />
+            <format attr='height-header' value='18' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1frm8hu0doi3nx17e9ych0bartcm].[none:PatientID:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows include-empty='true'>[federated.1frm8hu0doi3nx17e9ych0bartcm].[none:AdmitBedNum:nk]</rows>
+        <cols include-empty='true'>[federated.1frm8hu0doi3nx17e9ych0bartcm].[none:AdmitUnit:nk]</cols>
+      </table>
+      <simple-id uuid='{0AA2F0D4-3E6D-42C4-85B2-FD3D676A9460}' />
+    </worksheet>
+    <worksheet name='No. of Admissions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='14'>No. of Admissions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Admission Log (Patient Log)' name='federated.1frm8hu0doi3nx17e9ych0bartcm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1frm8hu0doi3nx17e9ych0bartcm'>
+            <column caption='Date' datatype='datetime' name='[AdmitDateTime]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[AdmitDateTime]' derivation='MDY' name='[md:AdmitDateTime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]' filter-group='4'>
+            <groupfilter function='member' level='[md:AdmitDateTime:ok]' member='20190529' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' data-class='subtotal' value='bold' />
+            <format attr='color' data-class='subtotal' value='#000000' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1frm8hu0doi3nx17e9ych0bartcm].[sum:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FDC963DF-8ACC-43DD-82C9-D4163639345C}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6E3EFC13-7F40-43EE-9F7C-9D5C92169ACA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Admissions'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Admission Log (Patient Log)' name='federated.1frm8hu0doi3nx17e9ych0bartcm' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1frm8hu0doi3nx17e9ych0bartcm'>
+        <column caption='Date' datatype='datetime' name='[AdmitDateTime]' role='dimension' type='quantitative' />
+        <column-instance column='[AdmitDateTime]' derivation='MDY' name='[md:AdmitDateTime:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98142' id='40' param='horz' type='layout-flow' w='99034' x='483' y='929'>
+            <zone h='98142' id='37' param='vert' type='layout-flow' w='99034' x='483' y='929'>
+              <zone h='98142' id='35' param='vert' type='layout-flow' w='99034' x='483' y='929'>
+                <zone h='98142' id='33' param='vert' type='layout-flow' w='99034' x='483' y='929'>
+                  <zone h='98142' id='7' param='horz' type='layout-flow' w='99034' x='483' y='929'>
+                    <zone h='98142' id='5' type='layout-basic' w='99034' x='483' y='929'>
+                      <zone h='37863' id='9' name='Admission By Unit' w='38807' x='483' y='12137'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='34300' id='11' name='Admitted To Bed' w='60227' x='39290' y='12137'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='49071' id='12' name='Admission By Date' w='99034' x='483' y='50000'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='11208' id='10' mode='dropdown' name='Admission By Unit' param='[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]' type='filter' w='49515' x='483' y='929'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='3563' id='13' name='Admission By Date' pane-specification-id='0' param='[federated.1frm8hu0doi3nx17e9ych0bartcm].[none:AdmitUnit:nk]' type='color' w='60227' x='39290' y='46437'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='11208' id='38' name='No. of Admissions' w='49519' x='49998' y='929'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='46' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98142' id='45' param='vert' type='layout-flow' w='99034' x='483' y='929'>
+                <zone fixed-size='82' h='11208' id='38' is-fixed='true' name='No. of Admissions' w='49519' x='49998' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11208' id='10' mode='dropdown' name='Admission By Unit' param='[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]' type='filter' w='49515' x='483' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37863' id='9' is-fixed='true' name='Admission By Unit' w='38807' x='483' y='12137'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='34300' id='11' is-fixed='true' name='Admitted To Bed' w='60227' x='39290' y='12137'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49071' id='12' is-fixed='true' name='Admission By Date' w='99034' x='483' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3563' id='13' name='Admission By Date' pane-specification-id='0' param='[federated.1frm8hu0doi3nx17e9ych0bartcm].[none:AdmitUnit:nk]' type='color' w='60227' x='39290' y='46437'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BAD5767B-510F-4C2A-A695-134CEFE99011}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='dashboard' name='Admissions'>
+      <viewpoints>
+        <viewpoint name='Admission By Date'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='2' />
+        </viewpoint>
+        <viewpoint name='Admission By Unit'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Admitted To Bed'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='No. of Admissions'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='12' />
+      <simple-id uuid='{F956DC0B-9155-48B1-88D9-F5E6BC5B5A55}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6F0BC954-8C6A-465A-A3BE-819C5815830D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Admission By Date'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]</field>
+            <field>[federated.1frm8hu0doi3nx17e9ych0bartcm].[none:AdmitUnit:nk]</field>
+            <field>[federated.1frm8hu0doi3nx17e9ych0bartcm].[tdy:AdmitDateTime:qk]</field>
+            <field>[federated.1frm8hu0doi3nx17e9ych0bartcm].[tyr:AdmitDateTime:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2E669271-F239-40B9-B2B6-76BB4AB31039}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Admission By Unit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1frm8hu0doi3nx17e9ych0bartcm].[none:AdmitUnit:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]</field>
+            <field>[federated.1frm8hu0doi3nx17e9ych0bartcm].[none:AdmitUnit:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D30532B4-B5ED-4B19-8486-0A62F788520E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Admitted To Bed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]</field>
+            <field>[federated.1frm8hu0doi3nx17e9ych0bartcm].[none:AdmitBedNum:nk]</field>
+            <field>[federated.1frm8hu0doi3nx17e9ych0bartcm].[none:AdmitUnit:nk]</field>
+            <field>[federated.1frm8hu0doi3nx17e9ych0bartcm].[none:PatientID:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3040C420-D6B4-42E2-B0AD-FA0CE44313EA}' />
+    </window>
+    <window class='worksheet' hidden='true' name='No. of Admissions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1frm8hu0doi3nx17e9ych0bartcm].[md:AdmitDateTime:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FD3229CD-13CF-45D6-9D44-821A0C9D4C5F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Admissions' width='192'>
+      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
+      lNf+P1ruHnYDfJjvAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
