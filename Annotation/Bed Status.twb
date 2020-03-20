@@ -20,9 +20,6 @@
     <datasource caption='s' inline='true' name='federated.1cxo73912clkq81enr42i15a1x09' version='18.1'>
       <connection class='federated'>
         <named-connections>
-          <named-connection caption='s' name='textscan.0hi99zz0rdgk3c13e3g7116nxpag'>
-            <connection class='textscan' directory='C:/Users/Paddy/Desktop' filename='s.csv' password='' server='' />
-          </named-connection>
           <named-connection caption='Annotation' name='excel-direct.17tviqa1ai6cie17cd3cn14tt8aj'>
             <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Paddy/Desktop/Annotation.xlsx' interpretationMode='0' password='' server='' validate='no' />
           </named-connection>
