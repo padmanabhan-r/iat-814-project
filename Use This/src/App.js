@@ -5,7 +5,9 @@ import Dashboard from "./components/Dashboard";
 import Chart1 from "./components/Chart1";
 import TableauChart from "./components/TableauChart";
 import TableauTest from "./components/TableauTest";
-import RechartLine from "./components/RechartLine";
+//import RechartLine from "./components/RechartLine";
+import ZommArea from './components/ZommArea';
+import D3BarChart3 from './components/D3BarChart3';
 
 function App() {
   return (
@@ -13,8 +15,10 @@ function App() {
       <Header />
       <Dashboard />
       {/* <Chart1 /> */}
+      <ZommArea />
+      <D3BarChart3 />
       
-      <RechartLine />
+     {/* <RechartLine /> */}
       {/* <TableauChart /> */}
     </div>
   );
