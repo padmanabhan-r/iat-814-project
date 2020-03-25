@@ -9,11 +9,10 @@ class TableauChart extends Component {
 
 
   initViz() {
-    // const vizUrl = 'https://public.tableau.com/views/Admissions_15842214651050/AdmissionByDate?:display_count=y&publish=yes&:toolbar=no&:origin=viz_share_link';
-    const vizUrl = 'https://public.tableau.com/shared/H777G5DMC?:display_count=y&:origin=viz_share_link';
+    const vizUrl = 'https://public.tableau.com/shared/H69H3DBCT?:display_count=y&:origin=viz_share_link';
     const options = {
       hideTabs: true,
-      width: "1600px",
+      width: "1200px",
       height: "800px",
       onFirstInteractive: () => {
         console.log("it worked");
