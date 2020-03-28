@@ -6,24 +6,25 @@ class Navigation extends Component {
     render() {
         return (
             <div>
-                {/* <Navbar bg="dark" expand="lg">
+                <Navbar bg="secondary" variant="light">
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <NavLink className='d-inline p-2 bg-dark text-white' to='/'>Home</NavLink>
-                            <NavLink className='d-inline p-2 bg-dark text-white' to='/tableau'>Bed Status</NavLink>
-                            <NavLink className='d-inline p-2 bg-dark text-white' to='/chartjs'>Occupancy</NavLink>
+                            <NavLink className='d-block p-1 bg-secondary text-white' to='/'>Daily Status</NavLink>
+                            <NavLink className='d-block p-1 bg-secondary text-white' to='/turnaround'>Turnaround</NavLink>
+                            <NavLink className='d-block p-1 bg-secondary text-white' to='/chartjs'>Summary Statistics</NavLink>
+                            <NavLink className='d-block p-1 bg-secondary text-white' to='/bedmap'>Layout</NavLink>
                         </Nav>
                     </Navbar.Collapse>
-                </Navbar> */}
-                <Navbar bg="light" variant="light">
+                </Navbar>
+                {/* <Navbar bg="light" variant="light">
                     <Nav className="mr-auto">
                         <Nav.Link href="/">Daily Status</Nav.Link>
                         <Nav.Link href="/chartjs">Summary Statistics</Nav.Link>
                         <Nav.Link href="/tableau">Unit Level Bed Status</Nav.Link>
                         
                     </Nav>
-                </Navbar>
+                </Navbar> */}
             </div>
         )
     }

@@ -3,31 +3,20 @@ import './App.css';
 import Header from "./components/Header";
 import Chart1 from "./components/Chart1";
 import TableauChart from "./components/TableauChart";
-<<<<<<< HEAD
-import TableauTest from "./components/TableauTest";
-//import RechartLine from "./components/RechartLine";
-import ZommArea from './components/ZommArea';
-import D3BarChart3 from './components/D3BarChart3';
-
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Dashboard />
-      {/* <Chart1 /> */}
-      <ZommArea />
-      <D3BarChart3 />
-      
-     {/* <RechartLine /> */}
-      {/* <TableauChart /> */}
-    </div>
-=======
 import RechartLine from "./components/RechartLine";
 import DBrushBar from "./components/DBrushBar";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navigation';
-
-
+import DailyStatus from "./components/DailyStatus";
+import D3BarChart3 from "./components/D3BarChart3";
+import ZommArea from "./components/ZommArea";
+import TreeM from "./components/TreeM";
+import Turn from "./components/Turn";
+import CustBar from "./components/CustBar";
+import TurnLine from "./components/TurnLine";
+import TurnBarBrush from "./components/TurnBarBrush";
+import Temp from "./components/Temp";
+import TurnAroundComp from "./components/TurnAroundComp";
 
 function App() {
   return (
@@ -36,13 +25,13 @@ function App() {
           <Header />
           <Navigation />
           <Switch>
-            <Route path='/' component={DBrushBar} exact></Route>
-            <Route path='/tableau' component={TableauChart}></Route>
-            <Route path='/chartjs' component={Chart1}></Route>
+            <Route path='/' component={DailyStatus} exact></Route>
+            <Route path='/turnaround' component={TurnAroundComp}></Route>
+            <Route path='/chartjs' component={CustBar}></Route>
+            <Route path='/bedmap' component={Temp}></Route>
           </Switch>
         </div>
       </BrowserRouter>
->>>>>>> f15bba5f3b83242305e40c2ca95e147b21db7c62
   );
 }
 
