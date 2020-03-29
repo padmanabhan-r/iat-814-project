@@ -20,11 +20,42 @@ class Chart1 extends Component {
                     options={{
                         maintainAspectRatio: false,
                         legend: {
-                            display: this.props.displayLegend,
-                            position: this.props.legendPosition
+                            position: 'top',
+                            labels: {
+                                fontColor: "black",
+                            },
+                        },
+                        scales: {
+                            xAxes: [{
+                                display: true,
+                                scaleLabel: {
+                                    display: true,
+                                    fontColor: "black",
+                                    fontSize: 10
+                                },
+                                ticks: {
+                                    fontColor: "black",
+                                    fontSize: 14
+                                },
+                                gridLines: { color: "black" }
+                            }],
+                            yAxes: [{
+                                display: true,
+                                scaleLabel: {
+                                    display: true,
+                                    labelString: 'Number of Patients',
+                                    fontColor: "black",
+                                    fontSize: 13
+                                },
+                                ticks: {
+                                    fontColor: "black",
+                                    fontSize: 14
+                                },
+                                responsive: true
+                            }]
                         }
                     }}
-                    height={300}
+                    height={250}
                 />
 
             </div>

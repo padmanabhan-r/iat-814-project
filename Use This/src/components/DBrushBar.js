@@ -39,23 +39,21 @@ class DBrushBar extends PureComponent {
     let selectedOption = "1N";
     return (
       <div>
-        <Select options={ unitNames } />
+        {/* <Select options={ unitNames } /> */}
         <BarChart
-          width={500}
+          width={580}
           height={300}
           data={getAggdata(this.state, selectedOption)}
-          margin={{
-            top: 5, right: 30, left: 20, bottom: 5,
-          }}
+          
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="Date" />
-          <YAxis />
+          <XAxis dataKey="Date" stroke="black"/>
+          <YAxis stroke="black" />
           <Tooltip />
-          <Legend verticalAlign="top" wrapperStyle={{ lineHeight: '40px' }} />
-          <ReferenceLine y={0} stroke="#000" />
-          <Brush dataKey="Date" height={30} stroke="#8884d8" />
-          <Bar dataKey="NumberOfPatients" fill="#8884d8" />
+          {/* <Legend verticalAlign="top" wrapperStyle={{ lineHeight: '40px' }} /> */}
+          <ReferenceLine y={0} stroke="black" />
+          <Brush dataKey="Date" height={30} stroke="black" />
+          <Bar dataKey="NumberOfPatients" fill="orange" />
         </BarChart>
       </div>
     );

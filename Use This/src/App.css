@@ -36,3 +36,129 @@
     transform: rotate(360deg);
   }
 }
+
+.status-bar {
+  display: inline-block;
+  width: 23%;
+  padding: 15px;
+  position: absolute;
+  left: 0px;
+  top: 112px;
+  /* border-width:1px; */
+  /* border-style:solid; */
+  /* border-color:black; */
+  z-index: 1;
+  background-color:#fff;
+  height: 93.2%;
+}
+
+.alert-title {
+  font-size: 1.25rem; text-align: center; color: black; visibility: visible;}
+
+
+  .adt-chart {
+    display: inline-block;
+    width: 35%;
+    /* height: 34%; */
+    padding: 5px;
+    position: absolute;
+    left: 23%;
+    top: 112px;
+    /* border-width:1px; */
+   /* border-style:solid; */
+   /* border-color:black; */
+   /* z-index: 1; */
+   background-color: #fff;
+  }
+
+  .dbrush-chart {
+    display: inline-block;
+    width: 40%;
+    /* height: 34%; */
+    padding: 5px;
+    position: absolute;
+    left: 23%;
+    top: 450px;
+    /* border-width:1px; */
+   /* border-style:solid; */
+   /* border-color:black; */
+   /* z-index: 1; */
+   background-color: #fff;
+  }
+
+  .treem-chart {
+    display: inline-block;
+    width: 40%;
+    /* height: 34%; */
+    padding: 5px;
+    position: absolute;
+    left: 63%;
+    top: 112px;
+    /* border-width:1px; */
+   /* border-style:solid; */
+   /* border-color:black; */
+   /* z-index: 1; */
+   background-color: #fff;
+  }
+
+
+  
+.custbar-chart {
+  display: inline-block;
+  /* width: 23%; */
+  padding: 15px;
+  position: absolute;
+  left: 0px;
+  top: 112px;
+  /* border-width:1px; */
+  /* border-style:solid; */
+  /* border-color:black; */
+  z-index: 1;
+  background-color:#fff;
+  /* height: 93.2%; */
+}
+
+.turn-chart {
+  display: inline-block;
+  /* width: 23%; */
+  padding: 15px;
+  position: absolute;
+  left: 600px;
+  top: 112px;
+  /* border-width:1px; */
+  /* border-style:solid; */
+  /* border-color:black; */
+  z-index: 1;
+  background-color:#fff;
+  height: 50%;
+}
+
+.turnline-chart {
+  display: inline-block;
+  /* width: 23%; */
+  padding: 15px;
+  position: absolute;
+  left: 0px;
+  top: 612px;
+  /* border-width:1px; */
+  /* border-style:solid; */
+  /* border-color:black; */
+  z-index: 1;
+  background-color:#fff;
+  /* height: 93.2%; */
+}
+
+.turnbarbrush-chart {
+  display: inline-block;
+  /* width: 23%; */
+  padding: 15px;
+  position: absolute;
+  left: 600px;
+  top: 632px;
+  /* border-width:1px; */
+  /* border-style:solid; */
+  /* border-color:black; */
+  z-index: 1;
+  background-color:#fff;
+  height: 50%;
+}
