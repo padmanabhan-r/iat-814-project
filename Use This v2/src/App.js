@@ -17,6 +17,11 @@ import TurnLine from "./components/TurnLine";
 import TurnBarBrush from "./components/TurnBarBrush";
 import Temp from "./components/Temp";
 import TurnAroundComp from "./components/TurnAroundComp";
+import D3BarChart2 from "./components/D3BarChart2";
+import SummaryComp from "./components/SummaryComp";
+import TreemapChart from "./components/TreemapChart";
+import LayoutComp from "./components/LayoutComp";
+
 
 function App() {
   return (
@@ -27,8 +32,9 @@ function App() {
           <Switch>
             <Route path='/' component={DailyStatus} exact></Route>
             <Route path='/turnaround' component={TurnAroundComp}></Route>
-            <Route path='/chartjs' component={CustBar}></Route>
+            <Route path='/summary' component={SummaryComp} exact></Route>
             <Route path='/bedmap' component={Temp}></Route>
+            <Route path='/potentialDT' component={LayoutComp}></Route>
           </Switch>
         </div>
       </BrowserRouter>

@@ -12,8 +12,9 @@ class Navigation extends Component {
                         <Nav className="mr-auto">
                             <NavLink className='d-block p-1 bg-secondary text-white' to='/'>Daily Status</NavLink>
                             <NavLink className='d-block p-1 bg-secondary text-white' to='/turnaround'>Turnaround</NavLink>
-                            <NavLink className='d-block p-1 bg-secondary text-white' to='/chartjs'>Summary Statistics</NavLink>
+                            <NavLink className='d-block p-1 bg-secondary text-white' to='/summary'>Summary Statistics</NavLink>
                             <NavLink className='d-block p-1 bg-secondary text-white' to='/bedmap'>Layout</NavLink>
+                            <NavLink className='d-block p-1 bg-secondary text-white' to='/potentialDT'>Potential Capacity</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
