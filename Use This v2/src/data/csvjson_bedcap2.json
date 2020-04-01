@@ -1,0 +1,408 @@
+[
+  {
+    "Date": "01-May",
+    "AdmCount": 2,
+    "DisCount": 0,
+    "ActualCapacity": 8,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "02-May",
+    "AdmCount": 4,
+    "DisCount": 0,
+    "ActualCapacity": 6,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "03-May",
+    "AdmCount": 5,
+    "DisCount": 2,
+    "ActualCapacity": 9,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "04-May",
+    "AdmCount": 2,
+    "DisCount": 1,
+    "ActualCapacity": 9,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "05-May",
+    "AdmCount": 4,
+    "DisCount": 1,
+    "ActualCapacity": 8,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "06-May",
+    "AdmCount": 2,
+    "DisCount": 2,
+    "ActualCapacity": 12,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "07-May",
+    "AdmCount": 4,
+    "DisCount": 2,
+    "ActualCapacity": 9,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "08-May",
+    "AdmCount": 1,
+    "DisCount": 3,
+    "ActualCapacity": 12,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "09-May",
+    "AdmCount": 5,
+    "DisCount": 5,
+    "ActualCapacity": 10,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "10-May",
+    "AdmCount": 6,
+    "DisCount": 1,
+    "ActualCapacity": 7,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "11-May",
+    "AdmCount": 1,
+    "DisCount": 4,
+    "ActualCapacity": 13,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "12-May",
+    "AdmCount": 2,
+    "DisCount": 3,
+    "ActualCapacity": 12,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "13-May",
+    "AdmCount": 3,
+    "DisCount": 1,
+    "ActualCapacity": 10,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "14-May",
+    "AdmCount": 4,
+    "DisCount": 1,
+    "ActualCapacity": 8,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "15-May",
+    "AdmCount": 2,
+    "DisCount": 4,
+    "ActualCapacity": 12,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "16-May",
+    "AdmCount": 2,
+    "DisCount": 1,
+    "ActualCapacity": 9,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "17-May",
+    "AdmCount": 1,
+    "DisCount": 0,
+    "ActualCapacity": 9,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "18-May",
+    "AdmCount": 4,
+    "DisCount": 4,
+    "ActualCapacity": 12,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "19-May",
+    "AdmCount": 3,
+    "DisCount": 4,
+    "ActualCapacity": 11,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "21-May",
+    "AdmCount": 2,
+    "DisCount": 4,
+    "ActualCapacity": 13,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "22-May",
+    "AdmCount": 2,
+    "DisCount": 3,
+    "ActualCapacity": 13,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "23-May",
+    "AdmCount": 3,
+    "DisCount": 2,
+    "ActualCapacity": 10,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "25-May",
+    "AdmCount": 2,
+    "DisCount": 3,
+    "ActualCapacity": 11,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "27-May",
+    "AdmCount": 1,
+    "DisCount": 0,
+    "ActualCapacity": 9,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "28-May",
+    "AdmCount": 6,
+    "DisCount": 1,
+    "ActualCapacity": 7,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "29-May",
+    "AdmCount": 2,
+    "DisCount": 2,
+    "ActualCapacity": 10,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "30-May",
+    "AdmCount": 1,
+    "DisCount": 2,
+    "ActualCapacity": 12,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "31-May",
+    "AdmCount": 4,
+    "DisCount": 2,
+    "ActualCapacity": 10,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "01-Jun",
+    "AdmCount": 1,
+    "DisCount": 3,
+    "ActualCapacity": 13,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "02-Jun",
+    "AdmCount": 2,
+    "DisCount": 1,
+    "ActualCapacity": 9,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "03-Jun",
+    "AdmCount": 2,
+    "DisCount": 0,
+    "ActualCapacity": 9,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "04-Jun",
+    "AdmCount": 1,
+    "DisCount": 1,
+    "ActualCapacity": 12,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "05-Jun",
+    "AdmCount": 3,
+    "DisCount": 2,
+    "ActualCapacity": 10,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "06-Jun",
+    "AdmCount": 2,
+    "DisCount": 1,
+    "ActualCapacity": 9,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "07-Jun",
+    "AdmCount": 3,
+    "DisCount": 4,
+    "ActualCapacity": 11,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "08-Jun",
+    "AdmCount": 2,
+    "DisCount": 3,
+    "ActualCapacity": 13,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "09-Jun",
+    "AdmCount": 4,
+    "DisCount": 4,
+    "ActualCapacity": 10,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "10-Jun",
+    "AdmCount": 3,
+    "DisCount": 3,
+    "ActualCapacity": 11,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "11-Jun",
+    "AdmCount": 2,
+    "DisCount": 2,
+    "ActualCapacity": 12,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "12-Jun",
+    "AdmCount": 3,
+    "DisCount": 1,
+    "ActualCapacity": 9,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "13-Jun",
+    "AdmCount": 2,
+    "DisCount": 5,
+    "ActualCapacity": 13,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "14-Jun",
+    "AdmCount": 3,
+    "DisCount": 1,
+    "ActualCapacity": 9,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "15-Jun",
+    "AdmCount": 3,
+    "DisCount": 1,
+    "ActualCapacity": 10,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "16-Jun",
+    "AdmCount": 3,
+    "DisCount": 1,
+    "ActualCapacity": 9,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "17-Jun",
+    "AdmCount": 2,
+    "DisCount": 0,
+    "ActualCapacity": 8,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "18-Jun",
+    "AdmCount": 4,
+    "DisCount": 3,
+    "ActualCapacity": 9,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "19-Jun",
+    "AdmCount": 1,
+    "DisCount": 3,
+    "ActualCapacity": 14,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "20-Jun",
+    "AdmCount": 2,
+    "DisCount": 8,
+    "ActualCapacity": 16,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "21-Jun",
+    "AdmCount": 1,
+    "DisCount": 1,
+    "ActualCapacity": 11,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "22-Jun",
+    "AdmCount": 2,
+    "DisCount": 2,
+    "ActualCapacity": 12,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "23-Jun",
+    "AdmCount": 1,
+    "DisCount": 1,
+    "ActualCapacity": 11,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "24-Jun",
+    "AdmCount": 1,
+    "DisCount": 3,
+    "ActualCapacity": 12,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "25-Jun",
+    "AdmCount": 3,
+    "DisCount": 4,
+    "ActualCapacity": 13,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "26-Jun",
+    "AdmCount": 2,
+    "DisCount": 4,
+    "ActualCapacity": 12,
+    "BedCapacity": 10
+  },
+  {
+    "Date": "27-Jun",
+    "AdmCount": 3,
+    "DisCount": 2,
+    "ActualCapacity": 10,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "28-Jun",
+    "AdmCount": 3,
+    "DisCount": 2,
+    "ActualCapacity": 11,
+    "BedCapacity": 12
+  },
+  {
+    "Date": "29-Jun",
+    "AdmCount": 2,
+    "DisCount": 1,
+    "ActualCapacity": 10,
+    "BedCapacity": 11
+  },
+  {
+    "Date": "30-Jun",
+    "AdmCount": 2,
+    "DisCount": 1,
+    "ActualCapacity": 9,
+    "BedCapacity": 10
+  }
+]

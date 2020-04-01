@@ -1,0 +1,290 @@
+[
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 125,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 126,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 127,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 128,
+    "Status": "To Be Cleaned"
+  },
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 129,
+    "Status": "To Be Cleaned"
+  },
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 130,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 131,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 132,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 133,
+    "Status": "Vacant"
+  },
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 134,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 135,
+    "Status": "To Be Cleaned"
+  },
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 136,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 137,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 138,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1N",
+    "Department": "General",
+    "BedNo": 139,
+    "Status": "Vacant"
+  },
+  {
+    "Unit": "1E",
+    "Department": "Emergency",
+    "BedNo": 121,
+    "Status": "To Be Cleaned"
+  },
+  {
+    "Unit": "1E",
+    "Department": "Emergency",
+    "BedNo": 122,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1E",
+    "Department": "Emergency",
+    "BedNo": 123,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1E",
+    "Department": "Emergency",
+    "BedNo": 124,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "BP",
+    "Department": "The Birthplace",
+    "BedNo": "BP 201",
+    "Status": "Vacant"
+  },
+  {
+    "Unit": "BP",
+    "Department": "The Birthplace",
+    "BedNo": "BP 202",
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "BP",
+    "Department": "The Birthplace",
+    "BedNo": "BP 203",
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "BP",
+    "Department": "The Birthplace",
+    "BedNo": "BP 204",
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "BP",
+    "Department": "The Birthplace",
+    "BedNo": "BP 205",
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "SCU",
+    "Department": "Special Care Unit",
+    "BedNo": "SCU 1",
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "SCU",
+    "Department": "Special Care Unit",
+    "BedNo": "SCU 2",
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "SCU",
+    "Department": "Special Care Unit",
+    "BedNo": "SCU 3",
+    "Status": "Vacant"
+  },
+  {
+    "Unit": "SCU",
+    "Department": "Special Care Unit",
+    "BedNo": "SCU 4",
+    "Status": "Vacant"
+  },
+  {
+    "Unit": "1W",
+    "Department": "Cardiac",
+    "BedNo": 111,
+    "Status": "Vacant"
+  },
+  {
+    "Unit": "1W",
+    "Department": "Cardiac",
+    "BedNo": 112,
+    "Status": "Vacant"
+  },
+  {
+    "Unit": "1W",
+    "Department": "Cardiac",
+    "BedNo": 113,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1W",
+    "Department": "Cardiac",
+    "BedNo": 114,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1W",
+    "Department": "Cardiac",
+    "BedNo": 115,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1W",
+    "Department": "Cardiac",
+    "BedNo": 116,
+    "Status": "Vacant"
+  },
+  {
+    "Unit": "1W",
+    "Department": "Cardiac",
+    "BedNo": 117,
+    "Status": "To Be Cleaned"
+  },
+  {
+    "Unit": "1W",
+    "Department": "Cardiac",
+    "BedNo": 118,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1W",
+    "Department": "Cardiac",
+    "BedNo": 119,
+    "Status": "To Be Cleaned"
+  },
+  {
+    "Unit": "1W",
+    "Department": "Cardiac",
+    "BedNo": 120,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1S",
+    "Department": "Intensive Care",
+    "BedNo": 101,
+    "Status": "To Be Cleaned"
+  },
+  {
+    "Unit": "1S",
+    "Department": "Intensive Care",
+    "BedNo": 102,
+    "Status": "Vacant"
+  },
+  {
+    "Unit": "1S",
+    "Department": "Intensive Care",
+    "BedNo": 103,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1S",
+    "Department": "Intensive Care",
+    "BedNo": 104,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1S",
+    "Department": "Intensive Care",
+    "BedNo": 105,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1S",
+    "Department": "Intensive Care",
+    "BedNo": 106,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1S",
+    "Department": "Intensive Care",
+    "BedNo": 107,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1S",
+    "Department": "Intensive Care",
+    "BedNo": 108,
+    "Status": "To Be Cleaned"
+  },
+  {
+    "Unit": "1S",
+    "Department": "Intensive Care",
+    "BedNo": 109,
+    "Status": "Occupied"
+  },
+  {
+    "Unit": "1S",
+    "Department": "Intensive Care",
+    "BedNo": 110,
+    "Status": "Vacant"
+  }
+]

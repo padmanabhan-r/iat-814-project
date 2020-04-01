@@ -29,7 +29,7 @@ console.log('Transfers');
     //  }) ;
 
 
-    const [ unit1N, unit1W, unitBP, unitSCU , unit1S, unit1E ] = data;
+    const [ unit1N, unit1W, unit1S, unitSCU , unitBP, unit1E ] = data;
 
     const parseDomain = () => [
         0,
@@ -82,6 +82,25 @@ console.log('Transfers');
             const domain = parseDomain();
           //const domain = [];
            // const domainDate = d3.scaleTime();
+           const timedata = ["Mar-20 13:00",  "Mar-20 14:00",
+            "Mar-20 15:00",
+            "Mar-20 16:00",
+            "Mar-20 17:00",
+            "Mar-20 18:00",
+            "Mar-20 19:00",
+            "Mar-20 20:00",
+            "Mar-20 21:00",
+            "Mar-20 22:00",
+            "Mar-20 23:00",
+            "Mar-21 0:00",
+            "Mar-21 1:00",
+            "Mar-21 2:00",
+            "Mar-21 3:00",
+            "Mar-21 4:00",
+            "Mar-21 5:00",
+            "Mar-21 6:00"
+           
+            ]
             
             const range = [0, width];
 
@@ -98,7 +117,7 @@ console.log('Transfers');
                         }}
                         
                     >
-                        <XAxis type="category" dataKey="AdjustedTime" name="AdjustedTime"  interval={0} tick={{ fontSize:6, color: "darkblack" }}  tickLine={{ transform: 'translate(0, -6)' }} />
+                        <XAxis type="category" dataKey={timedata} name="AdjustedTime"  interval={0} tick={{ fontSize:6, color: "darkblack" }}  tickLine={{ transform: 'translate(0, -6)' }} />
                         <YAxis type="number" dataKey="index" height={10} width={80} tick={false} tickLine={false} axisLine={false} label={{ value: 'Unit 1N', position: 'insideRight' }} />
                         <ZAxis type="category" dataKey="BedNum" domain={domain} range={range} />
                         <Tooltip cursor={{ strokeDasharray: '3 3' }} wrapperStyle={{ zIndex: 100 }} content={this.renderTooltip} />

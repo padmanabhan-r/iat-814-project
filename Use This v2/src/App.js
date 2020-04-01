@@ -21,6 +21,7 @@ import D3BarChart2 from "./components/D3BarChart2";
 import SummaryComp from "./components/SummaryComp";
 import TreemapChart from "./components/TreemapChart";
 import LayoutComp from "./components/LayoutComp";
+import TempComp from "./components/TempComp";
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
             <Route path='/' component={DailyStatus} exact></Route>
             <Route path='/turnaround' component={TurnAroundComp}></Route>
             <Route path='/summary' component={SummaryComp} exact></Route>
-            <Route path='/bedmap' component={Temp}></Route>
+            <Route path='/bedmap' component={TempComp}></Route>
             <Route path='/potentialDT' component={LayoutComp}></Route>
           </Switch>
         </div>

@@ -75,7 +75,7 @@ var svg = d3.select(this.myRef.current)
   // prepare a color scale
   var color = d3.scaleOrdinal()
     .domain(["General", "Emergency", "SpecialCareUnit","Surgical","Emergency","Maternity","Intensive Care Unit"])
-    .range([ "#402D54", "#D18975", "#8FD175","#fc9272",'#756bb1','#fec44f'])
+    .range(["#402D54", "#D18975", "#8FD175","#c994c7","#756bb1","#fec44f"])
 
   // And a opacity scale
   var opacity = d3.scaleLinear()
@@ -167,7 +167,7 @@ var svg = d3.select(this.myRef.current)
     .append("text")
       .attr("x", 0)
       .attr("y", 5)    // +20 to adjust position (lower)
-      .text("Six Hospital Units and 48 beds")
+      .text("Hospital Layout: 6 Units and 48 beds")
       .attr("font-size", "19px")
       .attr("fill",  "black" )
 

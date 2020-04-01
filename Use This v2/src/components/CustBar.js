@@ -7,7 +7,7 @@ import { scaleOrdinal } from 'd3-scale';
 import { schemeCategory10 } from 'd3-scale-chromatic';
 import data from '../data/turnaround_data';
 
-const colors = scaleOrdinal(schemeCategory10).range();
+const colors = scaleOrdinal(["#402D54", "#D18975", "#8FD175","#c994c7","#756bb1","#fec44f"]).range();
 
 const median = arr => {
     const mid = Math.floor(arr.length / 2),

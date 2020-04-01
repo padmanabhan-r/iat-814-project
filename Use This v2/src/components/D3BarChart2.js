@@ -28,7 +28,7 @@ class D3BarChart2 extends Component {
 var formatDate = d3.timeFormat("%b-%d");
 var bisectDate = d3.bisector(function (d) { return d.date; }).left;
 
-const colors = d3.scaleOrdinal(d3.schemeCategory10);
+const colors = d3.scaleOrdinal(["#fec44f","#402D54","#c994c7","#756bb1","#D18975","#8FD175"]);
      
    console.log(data);
         
@@ -120,7 +120,7 @@ const colors = d3.scaleOrdinal(d3.schemeCategory10);
         .attr("font-weight", "bold")
         .attr("font-size", "16px")
         .attr("font-color", "darkblue")
-        .text("Total Patient Admissions ")
+        .text("Total Patient Admissions over the months")
         .attr("transform", "translate(220, -20) ");
 
       // Add tooltip  
