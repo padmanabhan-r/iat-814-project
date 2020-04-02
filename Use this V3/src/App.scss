@@ -208,7 +208,7 @@ h6 {
 
 .Home {
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-left: 0rem;
@@ -1285,7 +1285,6 @@ footer {
   }
 }
 
-/* For the iPhone X folks OMG WHY ARE YOUR SCREENS SO NARROW T_T */
 @media (max-width: 375px) {
   .timeseries-mode {
     display: block !important;

@@ -15,7 +15,14 @@ import {scaleOrdinal} from 'd3-scale';
 import {schemeCategory10} from 'd3-scale-chromatic';
 import data from '../../data/turnaround_data';
 
-const colors = scaleOrdinal(schemeCategory10).range();
+const colors = scaleOrdinal([
+  '#402D54',
+  '#D18975',
+  '#8FD175',
+  '#c994c7',
+  '#756bb1',
+  '#fec44f',
+]).range();
 
 const median = (arr) => {
   const mid = Math.floor(arr.length / 2),
@@ -50,7 +57,7 @@ const getPath = (x, y, width, height) => `M${x},${y + height}
           C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3} ${
   x + width / 2
 }, ${y}
-          C${x + width / 2},${y + height / 3} ${x + (40 * width) / 3},${
+          C${x + width / 2},${y + height / 3} ${x + (2 * width) / 3},${
   y + height
 } ${x + width}, ${y + height}
           Z`;
@@ -77,45 +84,46 @@ class TurnUnit extends PureComponent {
 
   render() {
     return (
-      <BarChart
-        width={500}
-        height={200}
-        data={getAggdata(this.state)}
-        margin={{
-          top: 20,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="Unit">
-          <Label
-            value="Unit"
-            offset={1}
-            position="insideBottom"
-            fontFamily="arachia"
-          />
-        </XAxis>
-        <YAxis
-          label={{
-            value: 'Turnaround Time in Hours',
-            angle: -90,
-            position: 'Left',
-            fontFamily: 'arachia',
+      <div className="fadeInUp raisedbox" style={{animationDelay: '1.3s'}}>
+        <BarChart
+          width={600}
+          height={179}
+          data={getAggdata(this.state)}
+          margin={{
+            top: 20,
+            right: 60,
+            left: 20,
+            bottom: 5,
           }}
-        />
-        <Bar
-          dataKey="Median"
-          fill="#8884d8"
-          shape={<TriangleBar />}
-          label={{position: 'top'}}
         >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={colors[index % 20]} />
-          ))}
-        </Bar>
-      </BarChart>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis
+            dataKey="Unit"
+            value="Unit"
+            tick={{fontSize: 12, fontFamily: 'archia'}}
+          />
+          <YAxis
+            label={{
+              value: 'Turnaround Time in Hours',
+              angle: -90,
+              position: 'Left',
+              fontFamily: 'archia',
+              fontSize: 12,
+            }}
+            tick={{fontSize: 12, fontFamily: 'archia'}}
+          />
+          <Bar
+            dataKey="Median"
+            fill="#8884d8"
+            shape={<TriangleBar />}
+            label={{position: 'top', fontFamily: 'archia', fontSize: 12}}
+          >
+            {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+            ))}
+          </Bar>
+        </BarChart>
+      </div>
     );
   }
 }

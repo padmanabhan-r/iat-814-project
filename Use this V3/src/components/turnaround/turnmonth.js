@@ -67,26 +67,50 @@ class TurnMonth extends PureComponent {
 
   render() {
     return (
-      <LineChart width={600} height={300} data={getAggdata(this.state)}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="Month" padding={{left: 30, right: 30}}>
-          <Label value="Month" offset={-5} position="insideBottom" />
-        </XAxis>
-        <YAxis
-          label={{
-            value: 'Turnaround Time in Hours',
-            angle: -90,
-            position: 'Left',
+      <div>
+        <LineChart
+          width={600}
+          height={150}
+          data={getAggdata(this.state)}
+          margin={{
+            top: 20,
+            right: 60,
+            left: 20,
+            bottom: 5,
           }}
-        />
-        <Tooltip
-          cursor={{strokeDasharray: '3 3'}}
-          wrapperStyle={{zIndex: 100}}
-          content={this.renderTooltip}
-        />
-        {/* <Legend /> */}
-        <Line type="monotone" dataKey="Avg" stroke="red" activeDot={{r: 8}} />
-      </LineChart>
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis
+            dataKey="Month"
+            padding={{left: 30, right: 30}}
+            tick={{fontSize: 12, fontFamily: 'archia'}}
+          >
+            {/* <Label value="Month" offset={-5} position="insideBottom" /> */}
+          </XAxis>
+          <YAxis
+            label={{
+              value: 'TAT(hrs)',
+              angle: -90,
+              position: 'Left',
+              fontFamily: 'archia',
+              fontSize: 12,
+            }}
+            tick={{fontSize: 12, fontFamily: 'archia'}}
+          />
+          <Tooltip
+            cursor={{strokeDasharray: '3 3'}}
+            wrapperStyle={{zIndex: 100, fontSize: '12px', fontFamily: 'archia'}}
+            content={this.renderTooltip}
+          />
+          {/* <Legend /> */}
+          <Line
+            type="monotone"
+            dataKey="Avg"
+            stroke="#007bff"
+            activeDot={{r: 8}}
+          />
+        </LineChart>
+      </div>
     );
   }
 }

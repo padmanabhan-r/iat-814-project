@@ -12,6 +12,7 @@ import Navbar from './components/navbar';
 import Header from './components/header';
 // import DailyStatus from './components/DailyStatus';
 import Turnaround from './components/turnaround';
+import TableauChart from './components/tableauchart';
 
 const history = require('history').createBrowserHistory;
 
@@ -26,15 +27,21 @@ function App() {
     },
     {
       pageLink: '/turnaround',
-      view: React.Fragment, //Turnaround,
+      view: Turnaround, //Turnaround,
       displayName: 'Bed Turnaround',
       animationDelayForNavbar: 0.4,
     },
     {
       pageLink: '/bedstatus',
+      view: TableauChart, //Replace with the right componet
+      displayName: 'Bed Status Map',
+      animationDelayForNavbar: 0.3,
+    },
+    {
+      pageLink: '/bedcapacity',
       view: React.Fragment, //Replace with the right componet
       displayName: 'Bed Capacity Planning(Potential Discharges/Transfers)',
-      animationDelayForNavbar: 0.3,
+      animationDelayForNavbar: 0.5,
     },
     {
       pageLink: '/about',
