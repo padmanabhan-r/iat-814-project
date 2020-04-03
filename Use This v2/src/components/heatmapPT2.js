@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as d3 from 'd3';
-import data from '../data/heatmapdata3.json';
+import data from '../data/heatmapdata2.json';
 
 class HeatmapChart extends Component {
 
@@ -26,7 +26,6 @@ class HeatmapChart extends Component {
     var dataset;
  // var days =  ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   var days = ["1N","1E","1S","SCU","BP","1W"];
-  var dropdown=["T"];
  // var days =["Unit"];
 	var times = d3.range(24);
   
@@ -90,6 +89,7 @@ class HeatmapChart extends Component {
     var nest = d3.nest()
       .key(function(d) { return d.location; })
       .entries(dataset);
+      console.log(nest);
 
     // array of locations in the data
     var locations = nest.map(function(d) { return d.key; });
@@ -101,9 +101,9 @@ class HeatmapChart extends Component {
      locationMenu
    
       .append("select")
-      //.attr("id", "locationMenu")
+      .attr("id", "locationMenu")
       .selectAll("option")
-        .data(dropdown)
+        .data(days)
         .enter()
         .append("option")
         .attr("value", function(d, i) { return i; })
@@ -112,11 +112,13 @@ class HeatmapChart extends Component {
     // function to create the initial heatmap
     var drawHeatmap = function(location) {
 
-     // filter the data to return object of location of interest
-      var selectLocation = nest.find(function(d) {
+    //  // filter the data to return object of location of interest
+    //   var selectLocation = nest.find(function(d) {
+    //     return d.key == location;
+        var selectLocation= nest.find(function(d) { 
         return d.key == location;
-        
-      });
+           
+            });
 
 
     //  var selectLocation= nest.map(function(d) { return d.values;})
@@ -128,7 +130,7 @@ class HeatmapChart extends Component {
     //  console.log(allLocations);
 
       var heatmap = aRef.selectAll(".hour")
-        .data(selectLocation.values)
+        .data(function(d,i){return nest.values[i];})
         .enter()
         .append("rect")
         .attr("x", function(d) { return (d.hour-1) * gridSize; })
@@ -145,8 +147,12 @@ class HeatmapChart extends Component {
     var updateHeatmap = function(location) {
       console.log("currentLocationIndex: " + currentLocationIndex)
       // filter data to return object of location of interest
-      var selectLocation = nest.find(function(d) {
-        return d.key == location;
+    //   var selectLocation = nest.find(function(d) {
+    //     return d.key == location;
+    var selectLocation= nest.map(function(d) { 
+        return d.key = d.location;
+   
+
       });
 
       // update the data and redraw heatmap
@@ -200,9 +206,9 @@ render() {
         <meta charSet="utf-8" />
         <style dangerouslySetInnerHTML={{__html: "\n\t\thtml { \n      font-size: 62.5%; \n    } \n    \n    body {\n      margin-top: 30px;\n      font-size: 1.4rem;\n      font-family: 'Source Sans Pro', sans-serif;\n      font-weight: 400;\n      fill: #696969;\n      text-align: center;\n    }\n    \n    .timeLabel, .dayLabel {\n\t\t    font-size: 1.6rem;\n\t\t    fill: #AAAAAA;\n\t\t    font-weight: 300;\n\t\t}\n\n    #nav-container {\n      display: flex;\n      justify-content: center;\n      cursor: pointer;\n    }\n\n    #nav-container .left {\n      margin-right: 20px;\n    }\n\n    #nav-container .right {\n      margin-left: 20px;\n    }\n  " }} />
         <div id="nav-container">
-           <div className="nav left">Units</div> 
+          {/* <div className="nav left">left</div> */}
           <div id="locationDropdown" />
-          <div className="nav right">Hrs</div>
+          <div className="nav right">Units</div>
         </div>
         
         <div ref={this.myRef} ></div>
