@@ -58,9 +58,8 @@ class TurnHr extends PureComponent {
             padding: 10,
           }}
         >
-          <p>{data.hour}</p>
           <p>
-            <span>Turnaround Time(mins): {data.value}</span>
+            <span>Turnaround Time: {(data.value / 60).toFixed(2)} hrs</span>
           </p>
         </div>
       );
@@ -71,17 +70,17 @@ class TurnHr extends PureComponent {
 
   render() {
     const domain = parseDomain();
-    const range = [0, 1000];
+    const range = [0, 800];
 
     return (
-      <div>
+      <div className="fadeInUp raisedbox" style={{animationDelay: '1.3s'}}>
         <ScatterChart
-          width={900}
-          height={80}
+          width={750}
+          height={90}
           margin={{
             top: 20,
-            right: 0,
-            bottom: 0,
+            right: 10,
+            bottom: 10,
             left: 0,
           }}
         >
@@ -105,29 +104,30 @@ class TurnHr extends PureComponent {
               value: 'Unit 1E',
               position: 'insideRight',
               fontFamily: 'archia',
+              fontSize: 12,
             }}
           />
           <ZAxis type="number" dataKey="value" domain={domain} range={range} />
           <Tooltip
             cursor={{strokeDasharray: '3 3'}}
-            wrapperStyle={{zIndex: 100}}
+            wrapperStyle={{zIndex: 100, fontSize: '12px', fontFamily: 'archia'}}
             content={this.renderTooltip}
           />
           <Scatter
             data={unit1E}
-            fill="red"
+            fill="#dc3545"
             shape="circle"
             line={{stroke: 'black', strokeWidth: 1}}
           />
         </ScatterChart>
 
         <ScatterChart
-          width={900}
-          height={80}
+          width={750}
+          height={90}
           margin={{
             top: 20,
-            right: 0,
-            bottom: 0,
+            right: 10,
+            bottom: 10,
             left: 0,
           }}
         >
@@ -151,29 +151,30 @@ class TurnHr extends PureComponent {
               value: 'Unit 1S',
               position: 'insideRight',
               fontFamily: 'archia',
+              fontSize: 12,
             }}
           />
           <ZAxis type="number" dataKey="value" domain={domain} range={range} />
           <Tooltip
             cursor={{strokeDasharray: '3 3'}}
-            wrapperStyle={{zIndex: 100}}
+            wrapperStyle={{zIndex: 100, fontSize: '12px', fontFamily: 'archia'}}
             content={this.renderTooltip}
           />
           <Scatter
             data={unit1S}
-            fill="red"
+            fill="#dc3545"
             shape="circle"
             line={{stroke: 'black', strokeWidth: 1}}
           />
         </ScatterChart>
 
         <ScatterChart
-          width={900}
-          height={80}
+          width={750}
+          height={90}
           margin={{
             top: 20,
-            right: 0,
-            bottom: 0,
+            right: 10,
+            bottom: 10,
             left: 0,
           }}
         >
@@ -197,29 +198,30 @@ class TurnHr extends PureComponent {
               value: 'Unit 1W',
               position: 'insideRight',
               fontFamily: 'archia',
+              fontSize: 12,
             }}
           />
           <ZAxis type="number" dataKey="value" domain={domain} range={range} />
           <Tooltip
             cursor={{strokeDasharray: '3 3'}}
-            wrapperStyle={{zIndex: 100}}
+            wrapperStyle={{zIndex: 100, fontSize: '12px', fontFamily: 'archia'}}
             content={this.renderTooltip}
           />
           <Scatter
             data={unit1W}
-            fill="red"
+            fill="#dc3545"
             shape="circle"
             line={{stroke: 'black', strokeWidth: 1}}
           />
         </ScatterChart>
 
         <ScatterChart
-          width={900}
-          height={80}
+          width={750}
+          height={90}
           margin={{
             top: 20,
-            right: 0,
-            bottom: 0,
+            right: 10,
+            bottom: 10,
             left: 0,
           }}
         >
@@ -243,29 +245,30 @@ class TurnHr extends PureComponent {
               value: 'Unit 1N',
               position: 'insideRight',
               fontFamily: 'archia',
+              fontSize: 12,
             }}
           />
           <ZAxis type="number" dataKey="value" domain={domain} range={range} />
           <Tooltip
             cursor={{strokeDasharray: '3 3'}}
-            wrapperStyle={{zIndex: 100}}
+            wrapperStyle={{zIndex: 100, fontSize: '12px', fontFamily: 'archia'}}
             content={this.renderTooltip}
           />
           <Scatter
             data={unit1N}
-            fill="red"
+            fill="#dc3545"
             shape="circle"
             line={{stroke: 'black', strokeWidth: 1}}
           />
         </ScatterChart>
 
         <ScatterChart
-          width={900}
-          height={80}
+          width={750}
+          height={90}
           margin={{
             top: 20,
-            right: 0,
-            bottom: 0,
+            right: 10,
+            bottom: 10,
             left: 0,
           }}
         >
@@ -289,29 +292,30 @@ class TurnHr extends PureComponent {
               value: 'Unit BP',
               position: 'insideRight',
               fontFamily: 'archia',
+              fontSize: 12,
             }}
           />
           <ZAxis type="number" dataKey="value" domain={domain} range={range} />
           <Tooltip
             cursor={{strokeDasharray: '3 3'}}
-            wrapperStyle={{zIndex: 100}}
+            wrapperStyle={{zIndex: 100, fontSize: '12px', fontFamily: 'archia'}}
             content={this.renderTooltip}
           />
           <Scatter
             data={unitBP}
-            fill="red"
+            fill="#dc3545"
             shape="circle"
             line={{stroke: 'black', strokeWidth: 1}}
           />
         </ScatterChart>
 
         <ScatterChart
-          width={900}
-          height={80}
+          width={750}
+          height={90}
           margin={{
             top: 20,
-            right: 0,
-            bottom: 0,
+            right: 10,
+            bottom: 10,
             left: 0,
           }}
         >
@@ -320,7 +324,7 @@ class TurnHr extends PureComponent {
             dataKey="hour"
             name="hour"
             interval={0}
-            tick={{fontSize: 12, fontFamily: 'archia'}}
+            tick={{fontSize: 10, fontFamily: 'archia'}}
             tickLine={{transform: 'translate(0, -6)'}}
           />
           <YAxis
@@ -335,17 +339,18 @@ class TurnHr extends PureComponent {
               value: 'Unit SCU',
               position: 'insideRight',
               fontFamily: 'archia',
+              fontSize: 12,
             }}
           />
           <ZAxis type="number" dataKey="value" domain={domain} range={range} />
           <Tooltip
             cursor={{strokeDasharray: '3 3'}}
-            wrapperStyle={{zIndex: 100}}
+            wrapperStyle={{zIndex: 100, fontSize: '12px', fontFamily: 'archia'}}
             content={this.renderTooltip}
           />
           <Scatter
             data={unitSCU}
-            fill="red"
+            fill="#dc3545"
             shape="circle"
             line={{stroke: 'black', strokeWidth: 1}}
           />

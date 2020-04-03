@@ -12,6 +12,7 @@ import {
   Label,
 } from 'recharts';
 import data from '../../data/turnaround_data';
+import TurnMonth from './turnmonth';
 
 const getAggdata = (data) => {
   let result = [];
@@ -68,42 +69,49 @@ class TurnDate extends PureComponent {
 
   render() {
     return (
-      <BarChart
-        width={530}
-        height={200}
-        data={getAggdata(this.state)}
-        margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="Date">
-          {/* <Label value="Date" offset={0} position="insideBottom" /> */}
-        </XAxis>
-        <YAxis
-          label={{
-            value: 'TAT(Hrs)',
-            angle: -90,
-            position: 'Left',
-            fontFamily: 'arachia',
-            fontSize: 11,
+      <div className="fadeInUp raisedbox" style={{animationDelay: '1.3s'}}>
+        <TurnMonth />
+        <BarChart
+          width={600}
+          height={150}
+          data={getAggdata(this.state)}
+          margin={{
+            top: 20,
+            right: 60,
+            left: 20,
+            bottom: 5,
           }}
-          allowDataOverflow="False"
-          domain={[0, 48]}
-        />
-        <Tooltip
-          cursor={{strokeDasharray: '3 3'}}
-          wrapperStyle={{zIndex: 100}}
-          content={this.renderTooltip}
-        />
-        {/* <Legend verticalAlign="top" wrapperStyle={{lineHeight: '40px'}} /> */}
-        <ReferenceLine y={0} stroke="#000" />
-        <Brush dataKey="Date" height={30} stroke="#8884d8" />
-        <Bar dataKey="Avg" fill="#8884d8" />
-      </BarChart>
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="Date" tick={{fontSize: 12, fontFamily: 'archia'}} />
+
+          <YAxis
+            label={{
+              value: 'TAT(hrs)',
+              angle: -90,
+              position: 'Left',
+              fontFamily: 'archia',
+              fontSize: 12,
+            }}
+            tick={{fontSize: 12, fontFamily: 'archia'}}
+            allowDataOverflow="False"
+          />
+          <Tooltip
+            cursor={{strokeDasharray: '3 3'}}
+            wrapperStyle={{zIndex: 100, fontSize: '12px', fontFamily: 'archia'}}
+            content={this.renderTooltip}
+          />
+          {/* <Legend verticalAlign="top" wrapperStyle={{lineHeight: '40px'}} /> */}
+          <ReferenceLine y={0} stroke="#000" />
+          <Brush
+            dataKey="Date"
+            height={30}
+            stroke="#007bff"
+            tickFormatter={{fontSize: 12, fontFamily: 'archia'}}
+          />
+          <Bar dataKey="Avg" fill="#007bff" />
+        </BarChart>
+      </div>
     );
   }
 }

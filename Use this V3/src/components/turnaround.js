@@ -30,67 +30,34 @@ function Turnaround(props) {
 
   return (
     <div className="Home">
-      <div className="home-left">
+      <div>
         {fetched && (
           <React.Fragment>
             <div
               className="timeseries-header fadeInUp"
               style={{animationDelay: '1s'}}
             >
-              <h2>BTAT(Unit-wise)</h2>
-              {/* <div className="tabs">
-
-                <div
-                >
-                  <h4>Recent Status</h4>
-                </div>
-              </div> */}
+              <h2>BTAT Across Units</h2>
             </div>
             <TurnUnit />
-            <TurnDate />
-            {/* <div
+            <div
               className="timeseries-header fadeInUp"
-              style={{ animationDelay: '1s' }}
+              style={{animationDelay: '1s'}}
             >
-              <h1>Admissions, Discharges And Transfer Today</h1>
-              <div className="tabs">
-
-                <div
-                >
-                  <h4>Recent Status</h4>
-                </div>
-              </div>
-            </div> */}
+              <h2>BTAT Summary</h2>
+            </div>
+            <TurnDate />
           </React.Fragment>
         )}
       </div>
       <div>
         {fetched && (
           <React.Fragment>
-            {/* <div
-              className="timeseries-header fadeInUp"
-              style={{ animationDelay: '1s' }}
-            >
-              <h1>Admissions, Discharges And Transfer Summary</h1>
-              <div className="tabs">
-
-                <div
-                >
-                  <h4>Recent Status</h4>
-                </div>
-              </div>
-              <Chart1 />
-            </div> */}
             <div
               className="timeseries-header fadeInUp"
               style={{animationDelay: '1s'}}
             >
-              <h2>BTAT(Hour-Wise)</h2>
-              <div className="tabs">
-                <div>
-                  <h4>Last Two Months</h4>
-                </div>
-              </div>
+              <h2>BTAT Hourly Summary</h2>
             </div>
             <TurnHr />
           </React.Fragment>
