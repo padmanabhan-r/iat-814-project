@@ -55,13 +55,19 @@
 .alert-title {
   font-size: 1.25rem; text-align: center; color: black; visibility: visible;}
 
+  .chart-title {
+    font-size: 1.25rem; text-align: left; 
+    color: black; font-weight: 'bold';
+    transform: translateX(1rem);
+    visibility: visible;} 
+
 
   .adt-chart {
     display: inline-block;
     width: 35%;
     /* height: 34%; */
     padding: 5px;
-    position: absolute;
+    position: center;
     left: 23%;
     top: 112px;
     /* border-width:1px; */

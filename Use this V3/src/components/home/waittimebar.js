@@ -1,9 +1,9 @@
 
 import React, { Component } from 'react';
 import * as d3 from 'd3';
-import data from '../data/csvjson_waittime.json';
+import data from '../../data/csvjson_waittime.json';
 
-class D3BarChart3 extends Component {
+class WaitTimeBar extends Component {
 
   constructor(props) {
     super(props)
@@ -23,9 +23,9 @@ class D3BarChart3 extends Component {
 
   drawChart() {
 
-    var margin = { top: 60, right: 20, bottom: 60, left: 40 },
-      width = 600 - margin.left - margin.right,
-      height = 400 - margin.top - margin.bottom;
+    var margin = { top: 20, right: 20, bottom: 20, left: 40 },
+      width = 500 - margin.left - margin.right,
+      height = 300 - margin.top - margin.bottom;
 
       var parseTime = d3.timeParse("%Y-%m-%d");
       var formatDate = d3.timeFormat("%b-%d");
@@ -68,7 +68,7 @@ class D3BarChart3 extends Component {
 
       var yAxis = g => g
         .attr("transform", `translate(margin.left,0)`)
-        .call(d3.axisLeft(y).tickSizeOuter(0).tickFormat(d3.timeFormat("%b-%d")));
+        .call(d3.axisLeft(y).tickSizeOuter(0).tickFormat(d3.timeFormat("day"+"%d")));
 
 
       var xAxis = g => g
@@ -94,6 +94,7 @@ class D3BarChart3 extends Component {
         .call(yAxis)
         .selectAll("text")
         .style("text-anchor", "end")
+        //.text("Day")
         .attr("dx", "-.8em")
         .attr("dy", "-.55em")
         .attr("transform", "translate(10, 10)");
@@ -138,7 +139,7 @@ class D3BarChart3 extends Component {
         .attr("font-weight", "bold")
         .attr("font-size", "16px")
         .attr("font-color", "darkblue")
-        .text("Current Wait Time(mins) in Emergency")
+       // .text("Current Wait Time(mins) in Emergency")
         .attr("transform", "translate(220, -20) ");
 
       // Add tooltip  
@@ -159,24 +160,24 @@ class D3BarChart3 extends Component {
         .data(ndata)
         .enter().append("rect")
         .attr("class", "bar")
-        .attr("fill", "#2c7fb8")
+        .attr("fill", "orange")
         .attr("x", 0)
         .attr("height", y.bandwidth())
         .attr("y", function(d) { return y(d.date); })
         .attr("width", function(d) { return x(d.value); })
        .on("mouseover", d => {
-          tooltip.style("visibility", "visible").style("color", "orange").style("display", "inline-block").text(d.value);
+          tooltip.style("visibility", "visible").style("color", "black").style("display", "inline-block").text(d.value);
          
           
         })
               
-        .on("mousemove", d => hover.style("fill","orange"))
+        .on("mousemove", d => hover.style("fill","black"))
         .on("mouseout", d =>{ 
           tooltip.style("visibility", "hidden");
          // d3.select(this.rect).attr("fill", "green") 
         })
         
-        .on("mousemove", d => tooltip.style("top", (d3.event.pageY - 10) + "px").style("left", (d3.event.pageX + 10) + "px").text(d.value));
+        .on("mousemove", d => tooltip.style("top", (d3.event.pageY - 10) + "px").style("left", (d3.event.pageX + 10) + "px").text(d.value+"mins"));
 
       //   //d3.selectAll("rect").on("click", d => { d3.select(this).transition().duration(300).style("fill","orange") })  
    
@@ -207,5 +208,5 @@ class D3BarChart3 extends Component {
 
 
 
-export default D3BarChart3;
+export default WaitTimeBar;
 

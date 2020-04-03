@@ -2,7 +2,8 @@ import React from 'react';
 import {Sector, Cell, PieChart, Pie} from 'recharts';
 
 const GaugeChart = () => {
-  const width = 500;
+  const width = 440;
+  const height =300;
   const chartValue = 52;
   //["#fec44f","#402D54","#c994c7","#756bb1","#D18975","#8FD175"]
   const colorData = [
@@ -53,12 +54,12 @@ const GaugeChart = () => {
     startAngle: 180,
     endAngle: 0,
     cx: width / 2,
-    cy: width / 2,
+    cy: width / 2 ,
   };
 
   const pieRadius = {
-    innerRadius: (width / 2) * 0.35,
-    outerRadius: (width / 2) * 0.4,
+    innerRadius: (width / 2) * 0.5,
+    outerRadius: (width / 2) * 0.6,
   };
 
   const Arrow = ({cx, cy, midAngle, outerRadius}) => {
@@ -78,6 +79,7 @@ const GaugeChart = () => {
           fill="none"
           strokeLinecap="round"
         />
+       
       </g>
     );
   };
@@ -109,8 +111,19 @@ const GaugeChart = () => {
 
   return (
     <div className="fadeInUp raisedbox" style={{animationDelay: '1.3s'}}>
-      <PieChart width={width} height={width / 2 + 30}>
+       <h2>  Occupancy rate : 75%</h2>
+       <h2>  Total beds : 48</h2>
+      <PieChart width={width} height={height-50}>
+
+      <text x={width-50} y={160} textSize = "16px" textAnchor="middle" dominantBaseline="middle">
+        Empty beds:12
+      </text>
+
+      <text x={width-340} y={110} textAnchor="middle" dominantBaseline="middle">
+       Occupied beds:36
+      </text>
         <Pie
+         
           activeIndex={activeSectorIndex}
           activeShape={ActiveSectorMark}
           data={colorData}
@@ -121,6 +134,7 @@ const GaugeChart = () => {
           {colorData.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={colorData[index].color} />
           ))}
+         
         </Pie>
         <Pie
           stroke="none"

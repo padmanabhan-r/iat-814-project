@@ -21,17 +21,9 @@ class TreemapChart extends Component {
 
   drawChart() {
 
-// // set the dimensions and margins of the graph
-// var margin = {top: 10, right: 30, bottom: 30, left: 60},
-//     width = 600 - margin.left - margin.right,
-//     height = 400 - margin.top - margin.bottom;
-
-//     var parseTime = d3.timeParse("%Y-%m-%d");
-//     var bisectDate = d3.bisector(function (d) { return d.date; }).left;
-
 
 var margin = {top: 40, right:80, bottom: 20, left: 20},
-  width =600 - margin.left - margin.right,
+  width =600- margin.left - margin.right,
   height = 500 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
@@ -39,7 +31,7 @@ var svg = d3.select(this.myRef.current)
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
+    .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
@@ -74,7 +66,7 @@ var svg = d3.select(this.myRef.current)
 
   // prepare a color scale
   var color = d3.scaleOrdinal()
-    .domain(["General", "Emergency", "SpecialCareUnit","Surgical","Emergency","Maternity","Intensive Care Unit"])
+    .domain(["General", "Emergency", "SpecialCare","Surgical","Emergency","Maternity","Intensive Care"])
     .range(["#402D54", "#D18975", "#8FD175","#c994c7","#756bb1","#fec44f"])
 
   // And a opacity scale
@@ -110,7 +102,7 @@ var svg = d3.select(this.myRef.current)
       .style("fill", function(d){ return color(d.parent.data.name)} )
       .style("opacity", function(d){ return opacity(d.data.value)})
       .on("mouseover", d => {
-        tooltip.style("visibility", "visible").style("color", "yellow").style("display", "inline-block").text("BedNum");
+        tooltip.style("visibility", "visible").style("color", "yellow").style("display", "inline-block").text(d.data.name);
        
         
       })
@@ -122,7 +114,7 @@ var svg = d3.select(this.myRef.current)
        // d3.select(this.rect).attr("fill", "green") 
       })
       
-     .on("mousemove", d => tooltip.style("top", (d3.event.pageY - 20) + "px").style("left", (d3.event.pageX + 10) + "px").text("BedNum"));
+     .on("mousemove", d => tooltip.style("top", (d3.event.pageY - 20) + "px").style("left", (d3.event.pageX + 10) + "px").text(d.data.name));
    
 
 
@@ -132,7 +124,7 @@ var svg = d3.select(this.myRef.current)
     .data(root.leaves())
     .enter()
     .append("text")
-      .attr("x", function(d){ return d.x0+5})    // +10 to adjust position (more right)
+      .attr("x", function(d){ return d.x0+25})    // +10 to adjust position (more right)
       .attr("y", function(d){ return d.y0+20})    // +20 to adjust position (lower)
       .attr("text",function(d){ return d.data.name })
       .attr("font-size", "10px")
@@ -145,7 +137,7 @@ var svg = d3.select(this.myRef.current)
     .enter()
     .append("text")
       .attr("x", function(d){ return d.x0+5})    // +10 to adjust position (more right)
-      .attr("y", function(d){ return d.y0+30})    // +20 to adjust position (lower)
+      .attr("y", function(d){ return d.y0+15})    // +20 to adjust position (lower)
       .text(function(d){ return d.data.name })
       .attr("font-size", "10px")
       .attr("fill", "white")
@@ -158,8 +150,9 @@ var svg = d3.select(this.myRef.current)
     .append("text")
       .attr("x", function(d){ return d.x0})
       .attr("y", function(d){ return d.y0+10})
-      .text(function(d){ return d.data.name + "\n, Bed capacity "+ d.data.value })
+      .text(function(d){ return d.data.name + "\n, Beds  "+ d.data.value })
       .attr("font-size", "12px")
+      .attr("font-weight","30px")
       .attr("fill", "black")
 
   // Add title for the 3 groups

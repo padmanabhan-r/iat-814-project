@@ -1,8 +1,9 @@
 import React from 'react';
+//import { Text} from 'react-native';
 import { Sector, Cell, PieChart, Pie } from 'recharts';
 
 const GaugeChart = () => {
-        const width = 500;
+        const width = 400;
         const chartValue = 52;
         //["#fec44f","#402D54","#c994c7","#756bb1","#D18975","#8FD175"]
         const colorData = [{
@@ -97,22 +98,21 @@ const GaugeChart = () => {
 
         return (
             
-            <div>
-            <div className="Occupancy Rate">
-                <font h4 className="alert-title">Current Occupancy Rate </font>
-                
+           
             
-            <PieChart width={width} height={(width / 2) + 30}>
-                
-                
+                          
+            <PieChart width={width} height={(width /1) + 60}>
+         
                 <Pie
-                    activeIndex={activeSectorIndex}
+
+           activeIndex={activeSectorIndex}
                     activeShape={ActiveSectorMark}
                     data={colorData}
                     fill="#8884d8"
                     { ...pieRadius }
                     { ...pieProps }
                 >
+         
                     {
                         colorData.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={colorData[index].color} />
@@ -128,10 +128,10 @@ const GaugeChart = () => {
                     fill="none"
                     { ...pieProps }
                 />
+                
             </PieChart>
 
-            </div>
-            </div>
+           
         );
 };
 

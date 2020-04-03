@@ -1,0 +1,67 @@
+{"status":"T","location":"1N","day":1,"hour":1,"value":1,"value":1}
+{"DateTime": "2020-03-20 13:22", "hour": "13:22","day": 1, "BedNum": 125, "status": "D", "location": "1N","value":1},
+ {"DateTime": "2020-03-20 18:20", "hour": "18:20","day": 1, "BedNum": 134, "status": "D", "location": "1N","value":1},
+ {"DateTime": "2020-03-20 21:21", "hour": "21:21","day": 1, "BedNum": 131, "status": "D", "location": "1N","value":1},
+ {"DateTime": "2020-03-21 0:22", "hour": "0:22","day": 1, "BedNum": 128, "status": "D", "location": "1N","value":1},
+ {"DateTime": "2020-03-21 4:22", "hour": "4:22","day": 1, "BedNum": 130, "status": "D", "location": "1N","value":1},
+ {"DateTime": "2020-03-21 8:23", "hour": "8:23","day": 1, "BedNum": 138, "status": "D", "location": "1N","value":1},
+ {"DateTime": "2020-03-21 8:23", "hour": "8:23","day": 1, "BedNum": 129, "status": "D", "location": "1N","value":1},
+ {"DateTime": "2020-03-21 9:23", "hour": "9:23","day": 1, "BedNum": 137, "status": "D", "location": "1N","value":1},
+ {"DateTime": "2020-03-21 10:23", "hour": "10:23","day": 1, "BedNum": 139, "status": "D", "location": "1N","value":1},
+ {"DateTime": "2020-03-21 10:23", "hour": "10:23","day": 1, "BedNum": 127, "status": "D", "location": "1N","value":1},
+ {"DateTime": "2020-03-24 13:41", "hour": "13:41","day": 1, "BedNum": 135, "status": "D", "location": "1N","value":1},
+ {"DateTime": "2020-03-24 13:41", "hour": "13:41","day": 1, "BedNum": 128, "status": "D", "location": "1N","value":1},
+ {"DateTime": "2020-03-24 21:41", "hour": "21:41","day": 1, "BedNum": 135, "status": "D", "location": "1N","value":1}],
+
+ [
+    {"DateTime": "2020-03-20 14:18", "hour": "14:18","day": 1, "BedNum": 113, "status": "D", "location": "1W","value":1},
+     {"DateTime": "2020-03-20 17:20", "hour": "17:20","day": 1, "BedNum": 120, "status": "D", "location": "1W","value":1},
+     {"DateTime": "2020-03-20 17:20", "hour": "17:20","day": 1, "BedNum": 117, "status": "D", "location": "1W","value":1},
+     {"DateTime": "2020-03-20 20:21", "hour": "20:21","day": 1, "BedNum": 118, "status": "D", "location": "1W","value":1},
+    {"DateTime": "2020-03-20 21:21", "hour": "21:21","day": 1, "BedNum": 111, "status": "D", "location": "1W","value":1},
+     {"DateTime": "2020-03-20 22:21", "hour": "22:21","day": 1, "BedNum": 118, "status": "D", "location": "1W","value":1},
+     {"DateTime": "2020-03-20 22:21", "hour": "22:21","day": 1, "BedNum": 114, "status": "D", "location": "1W","value":1},
+     {"DateTime": "2020-03-21 0:22", "hour": "0:22","day": 1, "BedNum": 114, "status": "D", "location": "1W","value":1},
+     {"DateTime": "2020-03-21 1:22", "hour": "1:22","day": 1, "BedNum": 117, "status": "D", "location": "1W","value":1},
+     {"DateTime": "2020-03-21 1:22", "hour": "1:22","day": 1, "BedNum": 111, "status": "D", "location": "1W","value":1},
+     {"DateTime": "2020-03-21 5:22", "hour": "5:22","day": 1, "BedNum": 115, "status": "D", "location": "1W","value":1},
+     {"DateTime": "2020-03-21 8:23", "hour": "8:23","day": 1, "BedNum": 115, "status": "D", "location": "1W","value":1},
+     {"DateTime": "2020-03-21 10:23", "hour": "10:23","day": 1, "BedNum": 118, "status": "D", "location": "1W","value":1},
+     {"DateTime": "2020-03-25 1:41", "hour": "1:41","day": 1, "BedNum": 113, "status": "D", "location": "1W","value":1},
+     {"DateTime": "2020-03-25 4:41", "hour": "4:41","day": 1, "BedNum": 116, "status": "D", "location": "1W","value":1},
+     {"DateTime": "2020-03-25 7:41", "hour": "7:41","day": 1, "BedNum": 117, "status": "D", "location": "1W","value":1}
+
+ ],
+ [
+     
+    {"DateTime": "2020-03-20 16:20", "hour": "16:20","day": 1, "BedNum": "BP 201", "status": "D", "location": "BP","value":1},
+     {"DateTime": "2020-03-21 4:22", "hour": "4:22","day": 1, "BedNum": "BP 204", "status": "D", "location": "BP","value":1},
+    {"DateTime": "2020-03-21 6:23", "hour": "6:23","day": 1, "BedNum": "BP 201", "status": "D", "location": "BP","value":1},
+     {"DateTime": "2020-03-21 7:23", "hour": "7:23","day": 1, "BedNum": "BP 201", "status": "D", "location": "BP","value":1},
+     {"DateTime": "2020-03-21 7:23", "hour": "7:23","day": 1, "BedNum": "BP 202", "status": "D", "location": "BP","value":1},
+     {"DateTime": "2020-03-21 8:23", "hour": "8:23","day": 1, "BedNum": "BP 202", "status": "D", "location": "BP","value":1},
+     {"DateTime": "2020-03-24 13:41", "hour": "13:41","day": 1, "BedNum": "BP 203", "status": "D", "location": "BP","value":1}
+
+ ],
+
+ [
+
+ {"DateTime": "2020-03-20 21:21", "hour": "21:21","day": 1, "BedNum": "SCU 1", "status": "D", "location": "SCU","value":1},
+ {"DateTime": "2020-03-21 1:22", "hour": "1:22","day": 1, "BedNum": "SCU 3", "status": "D", "location": "SCU","value":1},
+{"DateTime": "2020-03-21 4:22", "hour": "4:22","day": 1, "BedNum": "SCU 4", "status": "D", "location": "SCU","value":1},
+ {"DateTime": "2020-03-21 4:22", "hour": "4:22","day": 1, "BedNum": "SCU 1", "status": "D", "location": "SCU","value":1},
+{"DateTime": "2020-03-21 7:23", "hour": "7:23","day": 1, "BedNum": "SCU 3", "status": "D", "location": "SCU","value":1},
+ {"DateTime": "2020-03-21 8:23", "hour": "8:23","day": 1, "BedNum": "SCU 4", "status": "D", "location": "SCU","value":1}
+ ],
+
+ [
+
+    {"DateTime": "2020-03-21 0:22", "hour": "0:22","day": 1, "BedNum": 102, "status": "D", "location": "1S","value":1},
+     {"DateTime": "2020-03-21 6:23", "hour": "6:23","day": 1, "BedNum": 105, "status": "D", "location": "1S","value":1},
+    {"DateTime": "2020-03-24 16:41", "hour": "16:41","day": 1, "BedNum": 107, "status": "D", "location": "1S","value":1},
+ ],
+[
+     {"DateTime": "2020-03-21 5:22", "hour": "5:22","day": 1, "BedNum": 121, "status": "D", "location": "1E","value":1},
+ {"DateTime": "2020-03-21 6:23", "hour": "6:23","day": 1, "BedNum": 123, "status": "D", "location": "1E","value":1}
+]
+];

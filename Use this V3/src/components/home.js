@@ -5,6 +5,7 @@ import ADTChart from '../components/home/adtchart';
 // import TreeM from './treem';
 import GaugeChart from '../components/home/gauge';
 import StackedBarR from '../components/home/stackedbar';
+import WaitTimeBar from '../components/home/waittimebar';
 
 // import data from '../data/data.json'
 // import data from '../data/data.json'
@@ -75,8 +76,9 @@ function Home(props) {
               className="timeseries-header fadeInUp"
               style={{animationDelay: '1s'}}
             >
-              <h2>Insert Graph 4 Title Here</h2>
+              <h2> Wait Time in Emergency (Current week)</h2>
             </div>
+            <WaitTimeBar />
           </React.Fragment>
         )}
       </div>
