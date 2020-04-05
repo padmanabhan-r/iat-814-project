@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import * as d3 from 'd3';
-import data from '../data/csvjson_admit.js';
+import data from '../data/data_new.js';
 import { extent } from "d3";
 
 class ZommArea extends Component {
@@ -42,14 +42,14 @@ var svg = d3.select(this.myRef.current)
   console.log(data);
 
 var ndata = d3.nest()                    //Aggregate data according to Admit Date
-.key(function (d) { return d.AdmitDate; })
-.sortKeys(d3.ascending)
-.key(function (d) { return d.PatientID; })
+.key(function (d) { return d.Activities1; })
+//.sortKeys(d3.ascending)
+//.key(function (d) { return d.date; })
 .rollup(function (leaves) { return leaves.length; })
 .entries(data);
 
 ndata.forEach(function (d) {
-d.date = parseTime(d.key);
+d.date = parseTime(d.values);
 d.value = +d.values.length;
 console.log(d.date, d.value);
 });

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import Header from "./components/Header";
 import Chart1 from "./components/Chart1";
@@ -22,6 +22,88 @@ import SummaryComp from "./components/SummaryComp";
 import TreemapChart from "./components/TreemapChart";
 import LayoutComp from "./components/LayoutComp";
 import TempComp from "./components/TempComp";
+import data from "./data/data";
+import { Layout } from 'antd';
+
+const { Sider, Content, Footer } = Layout;
+
+// export default class Dashboard extends Component {
+
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             selectedUser: data[0],
+//             greaterThenAge: 0,
+//             includedGender: ['Male', 'Female','Unknown'],
+//         }
+//     }
+
+//     changeSelectUser = value => {
+//         this.setState({
+//             selectedUser: value
+//         })
+//     }
+
+//     changeGreaterThenAge = value => {
+//         this.setState({
+//             greaterThenAge: value
+//         })
+//     }
+
+//     changeIncludedGender = value => {
+//         this.setState({
+//             includedGender: value
+//         })
+//     }
+
+//     render() {
+//         const {selectedUser, greaterThenAge, includedGender} = this.state;
+//         const filteredData = data.filter(user=>includedGender.indexOf(user.gender)!==-1)
+//                                  .filter(user=>user.age>greaterThenAge);
+//         return (
+//             <div>
+//                 <Layout style={{ height: 920 }}>
+//                     <Sider width={300} style={{backgroundColor:'#eee'}}>
+//                         <Content style={{ height: 200 }}>
+//                             <Chart1 user={selectedUser}/>
+//                         </Content>
+//                         <Content style={{ height: 300 }}>
+//                             <stackedbarR data={filteredData}/>
+//                         </Content>
+//                         <Content style={{ height: 400 }}>
+//                             <D3BarChart2
+//                                 changeGreaterThenAge={this.changeGreaterThenAge}
+//                                 changeIncludedGender={this.changeIncludedGender}
+//                             />
+//                         </Content>
+//                     </Sider>
+//                     </Layout>
+//                         {/* <Content style={{ height: 300 }}>
+//                             <View4 user={selectedUser}/>
+//                         </Content>
+//                         <Layout style={{ height: 600 }}>
+//                             <Content>
+//                                 <View5 data={filteredData}/>
+//                             </Content>
+//                             <Sider width={300} style={{backgroundColor:'#eee'}}>
+//                                 <View6 data={filteredData} changeSelectUser={this.changeSelectUser}/>
+//                             </Sider>
+//                         </Layout>
+//                     </Layout>
+//                 </Layout>
+//                 <Layout> */}
+//                     {/* <Footer style={{ height: 20 }}>
+//                         <div style={{marginTop: -10}}>
+//                             Source Code <a href='https://github.com/sdq/react-d3-dashboard'>https://github.com/sdq/react-d3-dashboard</a>;
+//                             Author <a href='https://sdq.ai'>sdq</a>;
+//                         </div>
+//                     </Footer>
+//                 </Layout> */}
+//             </div>
+//         )
+//     }
+// }
+
 
 
 function App() {

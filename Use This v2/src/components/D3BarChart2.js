@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import * as d3 from 'd3';
-import data from '../data/csvjson_admit.js';
+import data from '../data/data_new.js';
 
 class D3BarChart2 extends Component {
 
@@ -26,26 +26,27 @@ class D3BarChart2 extends Component {
 
       var parseTime = d3.timeParse("%Y-%m-%d");
 var formatDate = d3.timeFormat("%b-%d");
-var bisectDate = d3.bisector(function (d) { return d.date; }).left;
+//var bisectDate = d3.bisector(function (d) { return d.date; }).left;
 
 const colors = d3.scaleOrdinal(["#fec44f","#402D54","#c994c7","#756bb1","#D18975","#8FD175"]);
      
    console.log(data);
         
-      var ndata = d3.nest()                    //Aggregate data according to Admit Date
-        .key(function (d) { return(d.AdmitUnit); })
-        //.sortKeys(d3.ascending)
-        .key(function (d) { return d.PatientID; })
-        .rollup(function (leaves) { return leaves.length; })
-        .entries(data);
+      // var ndata = d3.nest()                    //Aggregate data according to Admit Date
+      //   .key(function (d) { return(d.name); })
+      //   //.sortKeys(d3.ascending)
+      // //  .key(function (d) { return d.activities1; })
+      //   .rollup(function (leaves) { return leaves.length; })
+      //   .entries(data);
 
-      ndata.forEach(function (d) {
+    data.forEach(function (d) {
         //d.date = formatDate(parseTime(d.key));
-        d.date = d.key;  
-        d.value = +d.values.length;
+        d.date = d.name;  
+        d.value = +d.activities1.length;
         console.log(d.date, d.value);
       });
-      console.log(ndata);
+      console.log("ndata"+data);
+
     
 
       const aRef = d3.select(this.myRef.current).append("svg")
@@ -74,11 +75,11 @@ const colors = d3.scaleOrdinal(["#fec44f","#402D54","#c994c7","#756bb1","#D18975
 
       var parseTime = d3.timeParse("%Y-%m-%d");
       var formatDate = d3.timeFormat("%b-%d");
-      var bisectDate = d3.bisector(function (d) { return d.date; }).left;
+ //     var bisectDate = d3.bisector(function (d) { return d.date; }).left;
 
 
-      x.domain(ndata.map(function (d) { return d.date; }));
-      y.domain([0, d3.max(ndata, function (d) { return d.value;})+5]);
+      x.domain(data.map(function (d) { return d.date; }));
+      y.domain([0, d3.max(data, function (d) { return d.value;})+5]);
 
       console.log(x.domain);
       console.log(y.domain);
@@ -141,7 +142,7 @@ const colors = d3.scaleOrdinal(["#fec44f","#402D54","#c994c7","#756bb1","#D18975
         .attr("fill","orange");  
 
       aRef.selectAll("rect")
-        .data(ndata)
+        .data(data)
         .enter().append("rect")
         .attr("classed","current")
          .attr("fill", function (d) {
