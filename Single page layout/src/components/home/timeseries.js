@@ -70,7 +70,7 @@ function TimeSeries(props) {
     // Margins
     const margin = {top: 0, right: 20, bottom: 50, left: 20};
     const width = 650 - margin.left - margin.right;
-    const height = 200 - margin.top - margin.bottom;
+    const height = 260 - margin.top - margin.bottom;
 
     const dateMin = new Date(data[0]['date'] + '2020');
     dateMin.setDate(dateMin.getDate() - 1);

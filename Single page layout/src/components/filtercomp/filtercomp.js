@@ -61,31 +61,32 @@ class FilterComp extends Component {
     render() {
         return (
             <div>
-                <div className="fadeInUp raisedbox" style={{ width:300 , animationDelay: '1.3s' }}>
-                    <div className="check-header" style={{ align:"center" }}>Unit and Date Filters</div>
+                <div className="check-header fadeInUp" style={{ animationDelay: '1.3s' }}>Select Unit</div>
+                <div className="fadeInUp check-header-content" style={{ width: 470, animationDelay: '1.3s' }}>
                     <div className="check-box" >
-                        <Checkbox
+                        {/* <Checkbox
                             indeterminate={this.state.indeterminate}
                             onChange={this.onCheckAllChange}
+                            disabled={true}
                             checked={this.state.checkAll}
                         >
                             Select All Units
-                    </Checkbox>
+                        </Checkbox> */}
                         <CheckboxGroup
                             options={plainOptions}
                             value={this.state.checkedList}
                             onChange={this.onChangeCheckbox}
                         />
-                        <br />
-                        <RangePicker
-                            defaultValue={[moment('01-Jan', dateFormat), moment('31-Dec', dateFormat)]}
-                            format="DD-MMM"
-                            onChange={this.onDatePickerChange}
-                        />
                     </div>
-                    {/* <div className="check-header">Choose Date(s)</div> */}
-                    {/* <Slider range defaultValue={['0101', '3112']} onChange={this.onChangeSilder}/> */}
-
+                </div>
+                <div className="check-header fadeInUp" style={{ animationDelay: '1.3s' }}>Select Date Range</div>
+                <div className="fadeInUp check-header-content" style={{ width: 470, height: 45, animationDelay: '1.3s' }}>
+                    <RangePicker
+                        defaultValue={[moment('01-Jan', dateFormat), moment('31-Dec', dateFormat)]}
+                        format="DD-MMM"
+                        onChange={this.onDatePickerChange}
+                        style={{ width: 450}}
+                    />
                 </div>
             </div>
         )

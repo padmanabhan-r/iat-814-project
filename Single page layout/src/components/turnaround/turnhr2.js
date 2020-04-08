@@ -51,13 +51,13 @@ class TurnHr2 extends PureComponent {
   render() {
     const {data} = this.props;
     const domain = parseDomain(data);
-    const range = [0, 250];
+    const range = [0, 200];
 
     return (
       <div className="fadeInUp raisedbox" style={{ animationDelay: '1.3s' }}>
         <ScatterChart
           width={450}
-          height={70}
+          height={100}
           margin={{
             top: 20,
             right: 10,

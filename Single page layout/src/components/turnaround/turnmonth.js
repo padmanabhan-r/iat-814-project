@@ -71,7 +71,7 @@ class TurnMonth extends PureComponent {
       <div className="fadeInUp raisedbox" style={{animationDelay: '1.3s'}}>
         <LineChart
           width={500}
-          height={100}
+          height={90}
           data={getAggdata(data)}
           margin={{
             top: 20,

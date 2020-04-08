@@ -73,7 +73,7 @@ class TurnDate extends PureComponent {
       <div className="fadeInUp raisedbox" style={{animationDelay: '1.3s'}}>
         <BarChart
           width={500}
-          height={100}
+          height={250}
           data={getAggdata(data)}
           margin={{
             top: 20,
@@ -85,7 +85,7 @@ class TurnDate extends PureComponent {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="Date" tick={{fontSize: 12, fontFamily: 'archia'}} />
 
-          <YAxis
+          <YAxis  
             label={{
               value: 'TAT(hrs)',
               angle: -90,
@@ -94,7 +94,7 @@ class TurnDate extends PureComponent {
               fontSize: 12,
             }}
             tick={{fontSize: 12, fontFamily: 'archia'}}
-            allowDataOverflow="False"
+            allowDataOverflow="True"
           />
           <Tooltip
             cursor={{strokeDasharray: '3 3'}}
@@ -102,13 +102,13 @@ class TurnDate extends PureComponent {
             content={this.renderTooltip}
           />
           {/* <Legend verticalAlign="top" wrapperStyle={{lineHeight: '40px'}} /> */}
-          <ReferenceLine y={0} stroke="#000" />
-          {/* <Brush
+          <ReferenceLine y={2.5} stroke="#000" />
+          <Brush
             dataKey="Date"
             height={30}
             stroke="#007bff"
             tickFormatter={{fontSize: 12, fontFamily: 'archia'}}
-          /> */}
+          />
           <Bar dataKey="Avg" fill="#007bff" />
         </BarChart>
       </div>
