@@ -57,7 +57,7 @@ class TurnHr2 extends PureComponent {
       <div className="fadeInUp raisedbox" style={{ animationDelay: '1.3s' }}>
         <ScatterChart
           width={450}
-          height={90}
+          height={70}
           margin={{
             top: 20,
             right: 10,

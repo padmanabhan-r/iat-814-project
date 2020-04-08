@@ -23,8 +23,8 @@ class TreemapChart extends Component {
 
 
 var margin = {top: 20, right:20, bottom: 20, left: 20},
-  width =500- margin.left - margin.right,
-  height = 500 - margin.top - margin.bottom;
+  width = 490 - margin.left - margin.right,
+  height = 320 - margin.top - margin.bottom;
 
 
   
@@ -133,7 +133,8 @@ var svg = d3.select(this.myRef.current)
       .attr("x", function(d){ return d.x0+25})    // +10 to adjust position (more right)
       .attr("y", function(d){ return d.y0+20})    // +20 to adjust position (lower)
       .attr("text",function(d){ return d.data.name })
-      .attr("font-size", "10px")
+      .attr("font-size", "9px")
+      .attr("font-family", "archia")
       .attr("fill", "black")
 
   // and to add the inside labels
@@ -145,8 +146,9 @@ var svg = d3.select(this.myRef.current)
       .attr("x", function(d){ return d.x0+4})    // +10 to adjust position (more right)
       .attr("y", function(d){ return d.y0+15})    // +20 to adjust position (lower)
       .text(function(d){ return d.data.name })
-      .attr("font-size", "12px")
+      .attr("font-size", "9px")
       .attr("fill", "black")
+      .attr("font-family", "archia")
 
   // Add title for the 3 groups
   svg
@@ -157,17 +159,19 @@ var svg = d3.select(this.myRef.current)
       .attr("x", function(d){ return d.x0})
       .attr("y", function(d){ return d.y0+10})
       .text(function(d){ return d.data.name + "\n, Beds  "+ d.data.value })
-      .attr("font-size", "14px")
-      .attr("font-weight","60px")
-      .attr("fill", "blue")
+      .attr("font-size", "10px")
+      // .attr("font-weight","60px")
+      .attr("font-family", "archia")
+      .attr("fill", "black")
 
   // Add title for the 3 groups
   svg
     .append("text")
       .attr("x", 0)
       .attr("y", 5)    // +20 to adjust position (lower)
-      .text("Hospital Layout: 6 Units and 48 beds")
+      .text("Hospital Layout: 5 Units - 44 Beds")
       .attr("font-size", "19px")
+      .attr("font-family", "archia")
       .attr("fill",  "black" )
 
       // svg.selectAll("rect")
@@ -190,7 +194,7 @@ var svg = d3.select(this.myRef.current)
 
 render() {
   return (
-    <div ref={this.myRef} ></div>
+    <div className="fadeInUp raisedbox" style={{animationDelay: '1.3s'}} ref={this.myRef} ></div>
   )
 }
 };

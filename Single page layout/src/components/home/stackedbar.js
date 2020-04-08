@@ -37,12 +37,6 @@ const data = [
     Total: 4,
   },
   {
-    Unit: '1E',
-    Occupied: 3,
-    Vacant: 2,
-    Total: 4,
-  },
-  {
     Unit: '1W',
     Occupied: 8,
     Vacant: 2,
@@ -56,7 +50,7 @@ export default class StackedBarR extends PureComponent {
       <div className="fadeInUp raisedbox" style={{animationDelay: '1.3s'}}>
         <BarChart
           width={440}
-          height={250}
+          height={180}
           data={data}
           margin={{
             top: 20,

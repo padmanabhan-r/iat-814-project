@@ -73,7 +73,7 @@ class TurnDate extends PureComponent {
       <div className="fadeInUp raisedbox" style={{animationDelay: '1.3s'}}>
         <BarChart
           width={500}
-          height={150}
+          height={100}
           data={getAggdata(data)}
           margin={{
             top: 20,
@@ -103,12 +103,12 @@ class TurnDate extends PureComponent {
           />
           {/* <Legend verticalAlign="top" wrapperStyle={{lineHeight: '40px'}} /> */}
           <ReferenceLine y={0} stroke="#000" />
-          <Brush
+          {/* <Brush
             dataKey="Date"
             height={30}
             stroke="#007bff"
             tickFormatter={{fontSize: 12, fontFamily: 'archia'}}
-          />
+          /> */}
           <Bar dataKey="Avg" fill="#007bff" />
         </BarChart>
       </div>

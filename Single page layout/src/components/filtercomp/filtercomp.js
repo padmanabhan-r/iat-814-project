@@ -61,9 +61,8 @@ class FilterComp extends Component {
     render() {
         return (
             <div>
-
-                <div className="fadeInUp raisedbox" style={{animationDelay: '1.3s'}}>
-                    <div className="check-header">Filter By Units</div>
+                <div className="fadeInUp raisedbox" style={{ width:300 , animationDelay: '1.3s' }}>
+                    <div className="check-header" style={{ align:"center" }}>Unit and Date Filters</div>
                     <div className="check-box" >
                         <Checkbox
                             indeterminate={this.state.indeterminate}
@@ -72,23 +71,21 @@ class FilterComp extends Component {
                         >
                             Select All Units
                     </Checkbox>
-                    <br />
-                    </div>
-                    <div className="check-box">
                         <CheckboxGroup
                             options={plainOptions}
                             value={this.state.checkedList}
                             onChange={this.onChangeCheckbox}
                         />
+                        <br />
+                        <RangePicker
+                            defaultValue={[moment('01-Jan', dateFormat), moment('31-Dec', dateFormat)]}
+                            format="DD-MMM"
+                            onChange={this.onDatePickerChange}
+                        />
                     </div>
-                    <div className="check-header">Choose Date(s)</div>
-                    
+                    {/* <div className="check-header">Choose Date(s)</div> */}
                     {/* <Slider range defaultValue={['0101', '3112']} onChange={this.onChangeSilder}/> */}
-                    <RangePicker
-                        defaultValue={[moment('01-Jan', dateFormat), moment('31-Dec', dateFormat)]}
-                        format="DD-MMM"
-                        onChange={this.onDatePickerChange}
-                    />
+
                 </div>
             </div>
         )

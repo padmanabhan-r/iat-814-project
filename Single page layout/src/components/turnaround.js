@@ -9,7 +9,6 @@ import data from '../data/turnaround_data';
 import big_data from '../data/turn_big';
 import FilterComp from './filtercomp/filtercomp'
 import moment from 'moment';
-const { Content } = Layout;
 
 const dateFormat = 'DD-MMM';
 
@@ -43,8 +42,6 @@ export class Turnaround extends Component {
       .filter(d => moment(d.Date,dateFormat) >= GreaterThanDate && moment(d.Date,dateFormat) <= LessThanDate);
     const filteredBigData = big_data.filter(d => includedUnit.indexOf(d.unit) !== -1)
       .filter(d => moment(d.date,dateFormat) >= GreaterThanDate && moment(d.date,dateFormat) <= LessThanDate);
-    // console.log("Test");
-    // console.log(filteredData);
 
     return (
       <div>
@@ -61,13 +58,13 @@ export class Turnaround extends Component {
               <h2>BTAT UnitWise Summary</h2>
             </div>
             <TurnUnit data={filteredData} />
-            <div
+            {/* <div
               className="timeseries-header fadeInUp"
               style={{ animationDelay: '1s' }}
             >
               <h2>BTAT Monthly Summary</h2>
             </div>
-            <TurnMonth data={filteredData} />
+            <TurnMonth data={filteredData} /> */}
             <div
               className="timeseries-header fadeInUp"
               style={{ animationDelay: '1s' }}

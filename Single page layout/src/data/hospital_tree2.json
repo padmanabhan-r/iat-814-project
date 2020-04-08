@@ -2,7 +2,7 @@
     "name": "Units",
     "children": [
      {
-      "name": "General: 1N","value":15,
+      "name": "1N","value":15,
       "children": [
          {"name": "125","status":"Occupied" },
          {"name": "126","status":"Occupied"},
@@ -15,16 +15,16 @@
         ]
        },
        {
-        "name": "Emergency: 1E","value":4,
+        "name": "BP","value":5,
         "children": [
-         {"name": "121","status":"Occupied" },
-         {"name": "122","status":"Occupied" },
-         {"name": "123","status":"Occupied" },
-         {"name": "124","status":"Occupied" }         
+         {"name": "BP201","status":"Ready"},
+         {"name": "BP202","status":"Occupied" },
+         {"name": "BP203","status":"Occupied" },
+         {"name": "BP204","status":"Occupied" },  {"name": "BP205","status":"Occupied" }       
         ]
        },
        {
-        "name": "SpecialCareUnit: SCU","value":4,
+        "name": "SCU","value":4,
         "children": [
          {"name": "SCU1","status": "Cleaning"},
          {"name": "SCU2","status":"Occupied" },
@@ -33,7 +33,7 @@
         ]
         },
        {
-        "name": "Surgical: 1S","value":10,
+        "name": "1S","value":10,
         "children": [
          {"name": "111" ,"status":"Occupied" },
          {"name": "112","status":"Cleaning" },
@@ -44,16 +44,7 @@
         ]
        },
        {
-        "name": "Maternity: BP","value":5,
-        "children": [
-         {"name": "BP201","status":"Ready"},
-         {"name": "BP202","status":"Occupied" },
-         {"name": "BP203","status":"Occupied" },
-         {"name": "BP204","status":"Occupied" },  {"name": "BP205","status":"Occupied" }       
-        ]
-       },
-       {
-        "name": "Intensive Care Unit: 1W","value":10,
+        "name": "1W","value":10,
         "children": [
          {"name": "101","status": "Occupied"},
          {"name": "102","status":"Occupied"},
