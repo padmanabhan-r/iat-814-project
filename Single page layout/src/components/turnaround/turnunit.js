@@ -18,7 +18,7 @@ import {schemeCategory10} from 'd3-scale-chromatic';
 const colors = scaleOrdinal([
   '#402D54',
   '#D18975',
-  '#8FD175',
+  '#c51b8a',
   '#c994c7',
   '#756bb1',
   '#fec44f',
@@ -116,12 +116,18 @@ class Turnunit extends PureComponent {
           <Bar
             dataKey="Median"
             fill="#8884d8"
-            // shape={<TriangleBar />}
             label={{position: 'top', fontFamily: 'archia', fontSize: 12}}
           >
+
+          <Tooltip wrapperStyle={{fontFamily: 'archia'}} />
+          <Legend
+            wrapperStyle={{fontSize: '12px', fontFamily: 'archia'}}
+            align="center"
+          />
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={colors[index % 20]} />
             ))}
+         
           </Bar>
         </BarChart>
       </div>

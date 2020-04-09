@@ -81,7 +81,7 @@ class TreemapChart extends Component {
       .range(["#402D54", "#D18975", "#8FD175", "#c994c7", "#756bb1", "#fec44f"])
 
     var myColor = d3.scaleOrdinal().domain(["Dirty", "Cleaning", "Ready", "Occupied"])
-      .range(["red", "orange", "green", "lightblue"])
+      .range(["#dc3545", "#fd7e14", "#28a745", "#9ecae1"])
 
     // And a opacity scale
     var opacity = d3.scaleLinear()

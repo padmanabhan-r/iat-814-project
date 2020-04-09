@@ -106,10 +106,10 @@ class TurnDate extends PureComponent {
           <Brush
             dataKey="Date"
             height={30}
-            stroke="#007bff"
+            stroke="#dc3545"
             tickFormatter={{fontSize: 12, fontFamily: 'archia'}}
           />
-          <Bar dataKey="Avg" fill="#007bff" />
+          <Bar dataKey="Avg" fill="#dc3545" />
         </BarChart>
       </div>
     );
