@@ -54,9 +54,10 @@ export default class ADTChart2 extends PureComponent {
                         wrapperStyle={{ fontSize: '12px', fontFamily: 'archia' }}
                         align="center"
                     />
-                    <Bar dataKey="Admissions" fill="#82ca9d" />
-                    <Bar dataKey="Discharges" fill="#8884d8" />
-                    <Bar dataKey="Transfers" fill="#ffc658" />
+                    
+                    <Bar dataKey="Admissions" fill="#8c510a" />
+                    <Bar dataKey="Discharges" fill="#35978f" />
+                    <Bar dataKey="Transfers" fill="#d8b365" />
                 </BarChart>
             </div>
         );

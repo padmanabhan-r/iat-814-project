@@ -48,8 +48,8 @@ export default class StackedBarR extends PureComponent {
             wrapperStyle={{fontSize: '12px', fontFamily: 'archia'}}
             align="center"
           />
-          <Bar dataKey="Occupied" stackId="a" fill="#007bff60" />
-          <Bar dataKey="Vacant" stackId="a" fill="#fee0d2" />
+          <Bar dataKey="Occupied" stackId="a" fill="#0570b0" />
+          <Bar dataKey="Vacant" stackId="a" fill="#9ebcda" />
         </BarChart>
       </div>
     );

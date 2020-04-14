@@ -6,6 +6,7 @@ import ADTChart from '../components/home/adtchart';
 import ADTChart2 from '../components/home/adtchart2';
 import Turnaround from './turnaround';
 import TreemapChart from '../components/home/TreemapChart'
+import Multiline2 from '../components/home/Multiline2';
 import FilterComp from './filtercomp/filtercomp';
 import HourSlider from './filtercomp/hourslider';
 
@@ -23,6 +24,7 @@ import big_data from '../data/turn_big';
 import hosptree2 from '../data/hosptree2';
 import turnar from '../data/turnar';
 import adtdata from '../data/adtdata';
+
 
 // const [unit1N, unit1S, unit1W, unitBP, unitSCU] = turnar;
 
@@ -157,7 +159,7 @@ export class Home extends Component {
                             className="timeseries-header fadeInUp"
                             style={{ animationDelay: '1.3s' }}
                         >
-                            <h2>ADT - Today</h2>
+                            <h2>ADT - Current</h2>
                         </div>
                         <ADTChart2 data={filtered_adtdata}/>
 
@@ -182,13 +184,15 @@ export class Home extends Component {
                             className="timeseries-header fadeInUp"
                             style={{ animationDelay: '1.3s' }}
                         >
-                            <h2>Recent Summary - All Units</h2>
+                            <h2>Admissions,Discharges,Transfers Trends - All Units</h2>
                         </div>
-                        <TimeSeries
+                        {/* <TimeSeries
                             timeseries={timeseries}
                             type={graphOption}
                             mode={timeseriesMode}
-                        />
+                        /> */}
+
+                        <Multiline2 />
                     </React.Fragment>
 
                 </div>

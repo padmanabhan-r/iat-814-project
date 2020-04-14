@@ -1,6 +1,6 @@
 module.exports = [
     {
-        unit: '1N', Admissions: 7, Discharges: 6, Transfers: 1,
+        unit: '1N', Admissions: 5, Discharges: 3, Transfers: 1,
     },
     {
         unit: '1S', Admissions: 3, Discharges: 2, Transfers: 2,

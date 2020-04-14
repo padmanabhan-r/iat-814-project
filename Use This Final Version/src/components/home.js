@@ -6,6 +6,7 @@ import ADTChart from '../components/home/adtchart';
 import GaugeChart from '../components/home/gauge';
 import StackedBarR from '../components/home/stackedbar';
 import WaitTimeBar from '../components/home/waittimebar';
+import Multiline2 from '../components/home/Multiline2';
 
 // import data from '../data/data.json'
 // import data from '../data/data.json'
@@ -91,11 +92,12 @@ function Home(props) {
             >
               <h2>Admissions, Discharges And Transfer Summary</h2>
             </div>
-            <TimeSeries
+            {/* <TimeSeries
               timeseries={timeseries}
               type={graphOption}
               mode={timeseriesMode}
-            />
+            /> */}
+            <Multiline2 />
           </React.Fragment>
         )}
       </div>
