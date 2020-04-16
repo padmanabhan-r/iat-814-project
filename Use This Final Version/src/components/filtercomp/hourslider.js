@@ -37,7 +37,7 @@ class HourSlider extends Component {
         return (
             <div>
                 <div className="check-header fadeInUp" style={{ animationDelay: '1.3s' }}>Select Hour</div>
-                <div className="fadeInUp check-header-content" style={{ width: 470, height: 50, paddingBottom:10,paddingRight:10,animationDelay: '1.3s' }}>
+                <div className="fadeInUp check-header-content" style={{ width: 469, height: 46,paddingTop:-5, paddingBottom:25 ,paddingRight:10,animationDelay: '1.3s' }}>
                     <Slider
                         range
                         min={0}

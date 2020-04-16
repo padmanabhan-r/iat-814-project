@@ -20,7 +20,7 @@ export default class StackedBarR extends PureComponent {
       <div className="fadeInUp raisedbox" style={{animationDelay: '1.3s'}}>
         <BarChart
           width={440}
-          height={180}
+          height={240}
           data={data}
           margin={{
             top: 20,
@@ -49,7 +49,9 @@ export default class StackedBarR extends PureComponent {
             align="center"
           />
           <Bar dataKey="Occupied" stackId="a" fill="#0570b0" />
-          <Bar dataKey="Vacant" stackId="a" fill="#9ebcda" />
+          <Bar dataKey="Ready" stackId="a" fill="#41ab5d" />
+          <Bar dataKey="Cleaning" stackId="a" fill="#fd7e1499" />
+          <Bar dataKey="Dirty" stackId="a" fill="#e31a1c" />
         </BarChart>
       </div>
     );

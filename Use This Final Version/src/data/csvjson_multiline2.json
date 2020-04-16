@@ -1,368 +1,368 @@
 [
   {
     "date": "01-May",
-    "dailyadmitted": 6,
-    "dailydischarged": 6,
-    "dailytransferred": 0
+    "Admissions": 6,
+    "Discharges": 6,
+    "Transfers": 0
   },
   {
     "date": "02-May",
-    "dailyadmitted": 3,
-    "dailydischarged": 6,
-    "dailytransferred": 0
+    "Admissions": 3,
+    "Discharges": 6,
+    "Transfers": 0
   },
   {
     "date": "03-May",
-    "dailyadmitted": 3,
-    "dailydischarged": 1,
-    "dailytransferred": 0
+    "Admissions": 3,
+    "Discharges": 1,
+    "Transfers": 0
   },
   {
     "date": "04-May",
-    "dailyadmitted": 5,
-    "dailydischarged": 6,
-    "dailytransferred": 2
+    "Admissions": 5,
+    "Discharges": 6,
+    "Transfers": 2
   },
   {
     "date": "05-May",
-    "dailyadmitted": 3,
-    "dailydischarged": 2,
-    "dailytransferred": 1
+    "Admissions": 3,
+    "Discharges": 2,
+    "Transfers": 1
   },
   {
     "date": "06-May",
-    "dailyadmitted": 3,
-    "dailydischarged": 2,
-    "dailytransferred": 0
+    "Admissions": 3,
+    "Discharges": 2,
+    "Transfers": 0
   },
   {
     "date": "07-May",
-    "dailyadmitted": 5,
-    "dailydischarged": 2,
-    "dailytransferred": 2
+    "Admissions": 5,
+    "Discharges": 2,
+    "Transfers": 2
   },
   {
     "date": "08-May",
-    "dailyadmitted": 7,
-    "dailydischarged": 9,
-    "dailytransferred": 3
+    "Admissions": 7,
+    "Discharges": 9,
+    "Transfers": 3
   },
   {
     "date": "09-May",
-    "dailyadmitted": 6,
-    "dailydischarged": 8,
-    "dailytransferred": 0
+    "Admissions": 6,
+    "Discharges": 8,
+    "Transfers": 0
   },
   {
     "date": "10-May",
-    "dailyadmitted": 5,
-    "dailydischarged": 5,
-    "dailytransferred": 0
+    "Admissions": 5,
+    "Discharges": 5,
+    "Transfers": 0
   },
   {
     "date": "11-May",
-    "dailyadmitted": 8,
-    "dailydischarged": 6,
-    "dailytransferred": 0
+    "Admissions": 8,
+    "Discharges": 6,
+    "Transfers": 0
   },
   {
     "date": "12-May",
-    "dailyadmitted": 10,
-    "dailydischarged": 5,
-    "dailytransferred": 0
+    "Admissions": 10,
+    "Discharges": 5,
+    "Transfers": 0
   },
   {
     "date": "13-May",
-    "dailyadmitted": 1,
-    "dailydischarged": 6,
-    "dailytransferred": 0
+    "Admissions": 1,
+    "Discharges": 6,
+    "Transfers": 0
   },
   {
     "date": "14-May",
-    "dailyadmitted": 2,
-    "dailydischarged": 10,
-    "dailytransferred": 3
+    "Admissions": 2,
+    "Discharges": 10,
+    "Transfers": 3
   },
   {
     "date": "15-May",
-    "dailyadmitted": 2,
-    "dailydischarged": 3,
-    "dailytransferred": 0
+    "Admissions": 2,
+    "Discharges": 3,
+    "Transfers": 0
   },
   {
     "date": "16-May",
-    "dailyadmitted": 4,
-    "dailydischarged": 6,
-    "dailytransferred": 1
+    "Admissions": 4,
+    "Discharges": 6,
+    "Transfers": 1
   },
   {
     "date": "17-May",
-    "dailyadmitted": 9,
-    "dailydischarged": 4,
-    "dailytransferred": 0
+    "Admissions": 9,
+    "Discharges": 4,
+    "Transfers": 0
   },
   {
     "date": "18-May",
-    "dailyadmitted": 6,
-    "dailydischarged": 9,
-    "dailytransferred": 0
+    "Admissions": 6,
+    "Discharges": 9,
+    "Transfers": 0
   },
   {
     "date": "19-May",
-    "dailyadmitted": 10,
-    "dailydischarged": 1,
-    "dailytransferred": 0
+    "Admissions": 10,
+    "Discharges": 1,
+    "Transfers": 0
   },
   {
     "date": "20-May",
-    "dailyadmitted": 3,
-    "dailydischarged": 1,
-    "dailytransferred": 0
+    "Admissions": 3,
+    "Discharges": 1,
+    "Transfers": 0
   },
   {
     "date": "21-May",
-    "dailyadmitted": 8,
-    "dailydischarged": 5,
-    "dailytransferred": 1
+    "Admissions": 8,
+    "Discharges": 5,
+    "Transfers": 1
   },
   {
     "date": "22-May",
-    "dailyadmitted": 7,
-    "dailydischarged": 2,
-    "dailytransferred": 2
+    "Admissions": 7,
+    "Discharges": 2,
+    "Transfers": 2
   },
   {
     "date": "23-May",
-    "dailyadmitted": 10,
-    "dailydischarged": 6,
-    "dailytransferred": 0
+    "Admissions": 10,
+    "Discharges": 6,
+    "Transfers": 0
   },
   {
     "date": "24-May",
-    "dailyadmitted": 7,
-    "dailydischarged": 5,
-    "dailytransferred": 0
+    "Admissions": 7,
+    "Discharges": 5,
+    "Transfers": 0
   },
   {
     "date": "25-May",
-    "dailyadmitted": 5,
-    "dailydischarged": 6,
-    "dailytransferred": 0
+    "Admissions": 5,
+    "Discharges": 6,
+    "Transfers": 0
   },
   {
     "date": "26-May",
-    "dailyadmitted": 3,
-    "dailydischarged": 8,
-    "dailytransferred": 1
+    "Admissions": 3,
+    "Discharges": 8,
+    "Transfers": 1
   },
   {
     "date": "27-May",
-    "dailyadmitted": 9,
-    "dailydischarged": 7,
-    "dailytransferred": 1
+    "Admissions": 9,
+    "Discharges": 7,
+    "Transfers": 1
   },
   {
     "date": "28-May",
-    "dailyadmitted": 7,
-    "dailydischarged": 5,
-    "dailytransferred": 2
+    "Admissions": 7,
+    "Discharges": 5,
+    "Transfers": 2
   },
   {
     "date": "29-May",
-    "dailyadmitted": 2,
-    "dailydischarged": 3,
-    "dailytransferred": 0
+    "Admissions": 2,
+    "Discharges": 3,
+    "Transfers": 0
   },
   {
     "date": "30-May",
-    "dailyadmitted": 7,
-    "dailydischarged": 1,
-    "dailytransferred": 1
+    "Admissions": 7,
+    "Discharges": 1,
+    "Transfers": 1
   },
   {
     "date": "31-May",
-    "dailyadmitted": 7,
-    "dailydischarged": 6,
-    "dailytransferred": 1
+    "Admissions": 7,
+    "Discharges": 6,
+    "Transfers": 1
   },
   {
     "date": "01-Jun",
-    "dailyadmitted": 3,
-    "dailydischarged": 6,
-    "dailytransferred": 0
+    "Admissions": 3,
+    "Discharges": 6,
+    "Transfers": 0
   },
   {
     "date": "02-Jun",
-    "dailyadmitted": 4,
-    "dailydischarged": 8,
-    "dailytransferred": 0
+    "Admissions": 4,
+    "Discharges": 8,
+    "Transfers": 0
   },
   {
     "date": "03-Jun",
-    "dailyadmitted": 1,
-    "dailydischarged": 5,
-    "dailytransferred": 0
+    "Admissions": 1,
+    "Discharges": 5,
+    "Transfers": 0
   },
   {
     "date": "04-Jun",
-    "dailyadmitted": 1,
-    "dailydischarged": 2,
-    "dailytransferred": 2
+    "Admissions": 1,
+    "Discharges": 2,
+    "Transfers": 2
   },
   {
     "date": "05-Jun",
-    "dailyadmitted": 4,
-    "dailydischarged": 10,
-    "dailytransferred": 1
+    "Admissions": 4,
+    "Discharges": 10,
+    "Transfers": 1
   },
   {
     "date": "06-Jun",
-    "dailyadmitted": 2,
-    "dailydischarged": 7,
-    "dailytransferred": 0
+    "Admissions": 2,
+    "Discharges": 7,
+    "Transfers": 0
   },
   {
     "date": "07-Jun",
-    "dailyadmitted": 10,
-    "dailydischarged": 7,
-    "dailytransferred": 2
+    "Admissions": 10,
+    "Discharges": 7,
+    "Transfers": 2
   },
   {
     "date": "08-Jun",
-    "dailyadmitted": 5,
-    "dailydischarged": 9,
-    "dailytransferred": 3
+    "Admissions": 5,
+    "Discharges": 9,
+    "Transfers": 3
   },
   {
     "date": "09-Jun",
-    "dailyadmitted": 3,
-    "dailydischarged": 6,
-    "dailytransferred": 0
+    "Admissions": 3,
+    "Discharges": 6,
+    "Transfers": 0
   },
   {
     "date": "10-Jun",
-    "dailyadmitted": 4,
-    "dailydischarged": 8,
-    "dailytransferred": 0
+    "Admissions": 4,
+    "Discharges": 8,
+    "Transfers": 0
   },
   {
     "date": "11-Jun",
-    "dailyadmitted": 1,
-    "dailydischarged": 7,
-    "dailytransferred": 0
+    "Admissions": 1,
+    "Discharges": 7,
+    "Transfers": 0
   },
   {
     "date": "12-Jun",
-    "dailyadmitted": 6,
-    "dailydischarged": 4,
-    "dailytransferred": 0
+    "Admissions": 6,
+    "Discharges": 4,
+    "Transfers": 0
   },
   {
     "date": "13-Jun",
-    "dailyadmitted": 3,
-    "dailydischarged": 4,
-    "dailytransferred": 0
+    "Admissions": 3,
+    "Discharges": 4,
+    "Transfers": 0
   },
   {
     "date": "14-Jun",
-    "dailyadmitted": 8,
-    "dailydischarged": 2,
-    "dailytransferred": 3
+    "Admissions": 8,
+    "Discharges": 2,
+    "Transfers": 3
   },
   {
     "date": "15-Jun",
-    "dailyadmitted": 6,
-    "dailydischarged": 2,
-    "dailytransferred": 0
+    "Admissions": 6,
+    "Discharges": 2,
+    "Transfers": 0
   },
   {
     "date": "16-Jun",
-    "dailyadmitted": 8,
-    "dailydischarged": 5,
-    "dailytransferred": 1
+    "Admissions": 8,
+    "Discharges": 5,
+    "Transfers": 1
   },
   {
     "date": "17-Jun",
-    "dailyadmitted": 4,
-    "dailydischarged": 3,
-    "dailytransferred": 0
+    "Admissions": 4,
+    "Discharges": 3,
+    "Transfers": 0
   },
   {
     "date": "18-Jun",
-    "dailyadmitted": 10,
-    "dailydischarged": 2,
-    "dailytransferred": 0
+    "Admissions": 10,
+    "Discharges": 2,
+    "Transfers": 0
   },
   {
     "date": "19-Jun",
-    "dailyadmitted": 5,
-    "dailydischarged": 10,
-    "dailytransferred": 0
+    "Admissions": 5,
+    "Discharges": 10,
+    "Transfers": 0
   },
   {
     "date": "20-Jun",
-    "dailyadmitted": 2,
-    "dailydischarged": 1,
-    "dailytransferred": 0
+    "Admissions": 2,
+    "Discharges": 1,
+    "Transfers": 0
   },
   {
     "date": "21-Jun",
-    "dailyadmitted": 2,
-    "dailydischarged": 6,
-    "dailytransferred": 1
+    "Admissions": 2,
+    "Discharges": 6,
+    "Transfers": 1
   },
   {
     "date": "22-Jun",
-    "dailyadmitted": 8,
-    "dailydischarged": 1,
-    "dailytransferred": 2
+    "Admissions": 8,
+    "Discharges": 1,
+    "Transfers": 2
   },
   {
     "date": "23-Jun",
-    "dailyadmitted": 1,
-    "dailydischarged": 5,
-    "dailytransferred": 0
+    "Admissions": 1,
+    "Discharges": 5,
+    "Transfers": 0
   },
   {
     "date": "24-Jun",
-    "dailyadmitted": 6,
-    "dailydischarged": 6,
-    "dailytransferred": 0
+    "Admissions": 6,
+    "Discharges": 6,
+    "Transfers": 0
   },
   {
     "date": "25-Jun",
-    "dailyadmitted": 7,
-    "dailydischarged": 6,
-    "dailytransferred": 0
+    "Admissions": 7,
+    "Discharges": 6,
+    "Transfers": 0
   },
   {
     "date": "26-Jun",
-    "dailyadmitted": 3,
-    "dailydischarged": 4,
-    "dailytransferred": 1
+    "Admissions": 3,
+    "Discharges": 4,
+    "Transfers": 1
   },
   {
     "date": "27-Jun",
-    "dailyadmitted": 9,
-    "dailydischarged": 2,
-    "dailytransferred": 1
+    "Admissions": 9,
+    "Discharges": 2,
+    "Transfers": 1
   },
   {
     "date": "28-Jun",
-    "dailyadmitted": 3,
-    "dailydischarged": 5,
-    "dailytransferred": 2
+    "Admissions": 3,
+    "Discharges": 5,
+    "Transfers": 2
   },
   {
     "date": "29-Jun",
-    "dailyadmitted": 4,
-    "dailydischarged": 1,
-    "dailytransferred": 0
+    "Admissions": 4,
+    "Discharges": 1,
+    "Transfers": 0
   },
   {
     "date": "30-Jun",
-    "dailyadmitted": 5,
-    "dailydischarged": 3,
-    "dailytransferred": 1
+    "Admissions": 5,
+    "Discharges": 3,
+    "Transfers": 1
   }
 ]

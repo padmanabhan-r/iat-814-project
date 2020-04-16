@@ -113,7 +113,7 @@ class Turnunit extends PureComponent {
       <div className="fadeInUp raisedbox" style={{animationDelay: '1.3s'}}>
         <BarChart
           width={500}
-          height={250}
+          height={200}
           data={getAggdata(data)}
           margin={{
             top: 20,

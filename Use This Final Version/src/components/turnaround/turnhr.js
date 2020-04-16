@@ -102,20 +102,20 @@ class TurnHr extends PureComponent {
       ),
     ];
     const domain = parseDomain();
-    const range = [0, 200];
+    const range = [0, 100];
 
 
     return (
-      <div className="fadeInUp raisedbox" style={{ animationDelay: '1.3s', width: 470, paddingTop: '0.1px', display: 'inline-block' }}>
+      <div className="fadeInUp raisedbox" style={{ animationDelay: '1.3s', width: 470, paddingTop: '15px', display: 'inline-block' }}>
         <ScatterChart
           width={470}
-          height={45}
-          margin={{
-            top: 20,
-            right: 10,
-            bottom: -10,
-            left: 0,
-          }}
+          height={30}
+          // margin={{
+          //   top: 20,
+          //   right: 10,
+          //   bottom: -10,
+          //   left: 0,
+          // }}
         >
 
           <YAxis
@@ -130,7 +130,7 @@ class TurnHr extends PureComponent {
               value: 'Unit 1S',
               position: 'insideTopRight',
               fontFamily: 'archia',
-              fontSize: 11
+              fontSize: 13
             }}
           />
           <ZAxis type="number" dataKey="value" domain={domain} range={range} />
@@ -141,7 +141,7 @@ class TurnHr extends PureComponent {
           />
           <Scatter
             data={unit1S}
-            fill="#dc3545"
+            fill="#402D54"
             shape="circle"
             line={{ stroke: 'black', strokeWidth: 1 }}
           />
@@ -149,13 +149,13 @@ class TurnHr extends PureComponent {
 
         <ScatterChart
           width={470}
-          height={45}
-          margin={{
-            top: 20,
-            right: 10,
-            bottom: -10,
-            left: 0,
-          }}
+          height={30}
+          // margin={{
+          //   top: 20,
+          //   right: 10,
+          //   bottom: -10,
+          //   left: 0,
+          // }}
         >
 
           <YAxis
@@ -170,7 +170,7 @@ class TurnHr extends PureComponent {
               value: 'Unit 1W',
               position: 'insideTopRight',
               fontFamily: 'archia',
-              fontSize: 11
+              fontSize: 13
             }}
           />
           <ZAxis type="number" dataKey="value" domain={domain} range={range} />
@@ -181,7 +181,7 @@ class TurnHr extends PureComponent {
           />
           <Scatter
             data={unit1W}
-            fill="#dc3545"
+            fill="#D18975"
             shape="circle"
             line={{ stroke: 'black', strokeWidth: 1 }}
           />
@@ -189,13 +189,13 @@ class TurnHr extends PureComponent {
 
         <ScatterChart
           width={470}
-          height={45}
-          margin={{
-            top: 20,
-            right: 10,
-            bottom: -10,
-            left: 0,
-          }}
+          height={30}
+          // margin={{
+          //   top: 20,
+          //   right: 10,
+          //   bottom: -10,
+          //   left: 0,
+          // }}
         >
           <YAxis
             type="number"
@@ -209,7 +209,7 @@ class TurnHr extends PureComponent {
               value: 'Unit 1N',
               position: 'insideTopRight',
               fontFamily: 'archia',
-              fontSize: 11
+              fontSize: 13
             }}
           />
           <ZAxis type="number" dataKey="value" domain={domain} range={range} />
@@ -220,7 +220,7 @@ class TurnHr extends PureComponent {
           />
           <Scatter
             data={unit1N}
-            fill="#dc3545"
+            fill="#c51b8a"
             shape="circle"
             line={{ stroke: 'black', strokeWidth: 1 }}
           />
@@ -228,13 +228,13 @@ class TurnHr extends PureComponent {
 
         <ScatterChart
           width={470}
-          height={45}
-          margin={{
-            top: 20,
-            right: 10,
-            bottom: -10,
-            left: 0,
-          }}
+          height={30}
+          // margin={{
+          //   top: 20,
+          //   right: 10,
+          //   bottom: -10,
+          //   left: 0,
+          // }}
         >
           <YAxis
             type="number"
@@ -248,7 +248,7 @@ class TurnHr extends PureComponent {
               value: 'Unit BP',
               position: 'insideTopRight',
               fontFamily: 'archia',
-              fontSize: 11
+              fontSize: 13
             }}
           />
           <ZAxis type="number" dataKey="value" domain={domain} range={range} />
@@ -259,7 +259,7 @@ class TurnHr extends PureComponent {
           />
           <Scatter
             data={unitBP}
-            fill="#dc3545"
+            fill="#c994c7"
             shape="circle"
             line={{ stroke: 'black', strokeWidth: 1 }}
           />
@@ -267,13 +267,13 @@ class TurnHr extends PureComponent {
 
         <ScatterChart
           width={470}
-          height={80}
-          margin={{
-            top: 20,
-            right: 10,
-            bottom: -10,
-            left: 0,
-          }}
+          height={60}
+          // margin={{
+          //   top: 20,
+          //   right: 10,
+          //   bottom: -10,
+          //   left: 0,
+          // }}
         >
           <XAxis
             type="category"
@@ -295,7 +295,7 @@ class TurnHr extends PureComponent {
               value: 'Unit SCU',
               position: 'insideTopRight',
               fontFamily: 'archia',
-              fontSize: 11
+              fontSize: 13
             }}
           />
           <ZAxis type="number" dataKey="value" domain={domain} range={range} />
@@ -306,7 +306,7 @@ class TurnHr extends PureComponent {
           />
           <Scatter
             data={unitSCU}
-            fill="#dc3545"
+            fill="#756bb1"
             shape="circle"
             line={{ stroke: 'black', strokeWidth: 1 }}
           />

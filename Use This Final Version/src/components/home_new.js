@@ -14,7 +14,9 @@ import TurnUnit from './turnaround/turnunit';
 import TurnHr from './turnaround/turnhr';
 import TurnHr2 from './turnaround/turnhr2';
 import TurnMonth from './turnaround/turnmonth';
-import TurnDate from './turnaround/turndate';
+// import TurnDate from './turnaround/turndate';
+import TurnDate from './turnaround/turndate2';
+
 
 //Data Imports
 import data from '../data/timeseriesdata'
@@ -102,7 +104,7 @@ export class Home extends Component {
     render() {
         const { graphOption, timeseries, timeseriesMode, includedUnit, GreaterThanDate, LessThanDate, greaterThanHour, lessThanHour } = this.state;
         const filtered_bedstatusdata = bedstatusdata.filter(d => includedUnit.indexOf(d.Unit) !== -1);
-        const filtered_adtdata= adtdata.filter(d => includedUnit.indexOf(d.unit) !== -1);
+        const filtered_adtdata = adtdata.filter(d => includedUnit.indexOf(d.unit) !== -1);
         const filteredData = turnaround_data.filter(d => includedUnit.indexOf(d.unit) !== -1)
             .filter(d => moment(d.Date, dateFormat) >= GreaterThanDate && moment(d.Date, dateFormat) <= LessThanDate);
         const filteredBigData = big_data.filter(d => includedUnit.indexOf(d.unit) !== -1)
@@ -159,9 +161,14 @@ export class Home extends Component {
                             className="timeseries-header fadeInUp"
                             style={{ animationDelay: '1.3s' }}
                         >
-                            <h2>ADT - Current</h2>
+                            <h2>BTAT Hourly Summary - Last 2 Weeks</h2>
                         </div>
-                        <ADTChart2 data={filtered_adtdata}/>
+                        <HourSlider
+                            changeHour={this.changeHour}
+                        />
+                        <h2></h2>
+                        <TurnHr data={filteredHourData} />
+
 
                     </React.Fragment>
 
@@ -172,13 +179,9 @@ export class Home extends Component {
                             className="timeseries-header fadeInUp"
                             style={{ animationDelay: '1.3s' }}
                         >
-                            <h2>BTAT Hourly Summary - Last 2 Weeks</h2>
+                            <h2>ADT - Current</h2>
                         </div>
-                        <HourSlider
-                            changeHour={this.changeHour}
-                        />
-                        <h2></h2>
-                        <TurnHr data={filteredHourData} />
+                        <ADTChart2 data={filtered_adtdata} />
 
                         <div
                             className="timeseries-header fadeInUp"

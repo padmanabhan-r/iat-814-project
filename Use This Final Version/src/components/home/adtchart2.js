@@ -29,7 +29,7 @@ export default class ADTChart2 extends PureComponent {
             <div className="fadeInUp raisedbox" style={{ animationDelay: '1.3s' }}>
                 <BarChart
                     width={470}
-                    height={200}
+                    height={250}
                     data={data}
                     margin={{
                         top: 5, right: 30, left: 20, bottom: 5,
