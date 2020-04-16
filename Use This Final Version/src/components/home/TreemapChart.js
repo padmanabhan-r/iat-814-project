@@ -4,6 +4,8 @@ import * as d3 from 'd3';
 // import data from '../../data/hospital_tree2.json';
 import { extent } from "d3";
 
+//Credit :  https://www.d3-graph-gallery.com/graph/treemap_custom.html
+
 class TreemapChart extends Component {
 
   constructor(props) {
@@ -50,20 +52,6 @@ class TreemapChart extends Component {
     console.log(data);
     var root = d3.hierarchy(data).count((d) => d.value) // Here the size of each leave is given in the 'value' field in input data
 
-
-    // // Read data
-    // d3.csv('data\treemapdata2.tm3', function(data) {
-    //  console.log(data);
-    //   // stratify the data: reformatting for d3.js
-    //   var root = d3.stratify()
-    //     .id(function(d) { return d.name; })   // Name of the entity (column name is name in csv)
-    //     .parentId(function(d) { return d.Parent; })   // Name of the parent (column name is parent in csv)
-    //     (data);
-    //     root.sum(function(d) { return +d.value })   // Compute the numeric value for each entity
-
-    // data.forEach(function(d){
-    // console.log(d.name,d.Parent,d.value);
-    // });
 
     // Then d3.treemap computes the position of each element of the hierarchy
     d3.treemap()
@@ -182,22 +170,7 @@ class TreemapChart extends Component {
       .attr("font-family", "archia")
       .attr("fill", "black")
 
-    // svg.selectAll("rect")
-    //   .transition()
-    //   .duration(1000)
-    //   .on("hover", d => {
-    //     tooltip.style("visibility", "visible").style("color", "orange").style("display", "inline-block").text(d.value);
-
-
-    //   })
-
-    //   var mouseover = function(d) {
-    //     tooltip.style("opacity", 1)
-    //   }
-
-    //})
-
-  }
+     }
 
 
   render() {

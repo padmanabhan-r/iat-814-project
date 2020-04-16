@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import * as d3 from 'd3';
-
-
 import data from '../../data/csvjson_multiline2.json';
 
+//Credit : template code from : https://www.d3-graph-gallery.com/graph/stackedarea_template.html
 class Multiline2 extends Component {
 
   constructor(props) {
@@ -39,16 +38,7 @@ class Multiline2 extends Component {
 
     var parseDate = d3.timeParse("%d-%b");
 
-    // Parse the Data
-    // d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/5_OneCatSevNumOrdered_wide.csv", function(data) {
-
-
-    //////////
-    // GENERAL //
-    //////////
-
-    // List of groups = header of the csv files
-    // var keys = data.columns.slice(1)
+    
 
     data.forEach(function (d) {
       d.date = parseDate(d.date);
