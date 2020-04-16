@@ -41,7 +41,7 @@ class TurnDate extends PureComponent {
                     <Brush dataKey="date" height={25} stroke="#2E3B55" />
 
                     <Bar dataKey="1N" stackId="a" fill="#402D54" />
-                    <Bar dataKey="1W" stackId="a" fill="#D18975" />
+                    <Bar dataKey="1W" stackId="a" fill="#fa9fb5" />
                     <Bar dataKey="1S" stackId="a" fill="#c51b8a" />
                     <Bar dataKey="BP" stackId="a" fill="#c994c7" />
                     <Bar dataKey="SCU" stackId="a" fill="#756bb1" />

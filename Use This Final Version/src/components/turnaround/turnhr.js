@@ -181,7 +181,7 @@ class TurnHr extends PureComponent {
           />
           <Scatter
             data={unit1W}
-            fill="#D18975"
+            fill="#fa9fb5"
             shape="circle"
             line={{ stroke: 'black', strokeWidth: 1 }}
           />

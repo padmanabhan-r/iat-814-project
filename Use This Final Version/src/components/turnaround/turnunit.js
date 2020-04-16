@@ -17,7 +17,7 @@ import {schemeCategory10} from 'd3-scale-chromatic';
 
 const colors = scaleOrdinal([
   '#402D54',
-  '#D18975',
+  '#fa9fb5',
   '#c51b8a',
   '#c994c7',
   '#756bb1',

@@ -81,7 +81,7 @@ class TreemapChart extends Component {
       .range(["#402D54", "#D18975", "#8FD175", "#c994c7", "#756bb1", "#fec44f"])
 
     var myColor = d3.scaleOrdinal().domain(["Dirty", "Cleaning", "Ready", "Occupied"])
-      .range(["#e31a1c", "#fd7e1499", "#41ab5d", "#0570b0"])
+      .range(["#b2182b", "#fd7e1499", "#41ab5d", "#4575b4"])
 
     // And a opacity scale
     var opacity = d3.scaleLinear()
@@ -116,7 +116,7 @@ class TreemapChart extends Component {
       .attr("fill", function (d) { return myColor(d.data.status) })
       .attr("opacity", function (d) { return opacity(d.data.status) })
       .on("mouseover", d => {
-        tooltip.style("visibility", "visible").style("color", "black").style("display", "inline-block").text(d.data.status);
+        tooltip.style("visibility", "visible").style("color", "yellow").style("display", "inline-block").text(d.data.status);
 
 
       })
@@ -128,7 +128,7 @@ class TreemapChart extends Component {
         // d3.select(this.rect).attr("fill", "green") 
       })
 
-      .on("mousemove", d => tooltip.style("top", (d3.event.pageY - 20) + "px").style("left", (d3.event.pageX + 10) + "px").text("Current Status: "+d.data.status));
+      .on("mousemove", d => tooltip.style("top", (d3.event.pageY - 20) + "px").style("left", (d3.event.pageX + 10) + "px").text("Status: "+d.data.status));
 
 
 

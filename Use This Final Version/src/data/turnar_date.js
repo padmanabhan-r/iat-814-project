@@ -1,6 +1,7 @@
 module.exports = [
+ 
     {
-      "date": "01-May",
+      "date": "01-Feb",
       "1N": 2.6,
       "1W": 4.8,
       "1S": 1.4,
@@ -8,7 +9,7 @@ module.exports = [
       "SCU": 2.3
     },
     {
-      "date": "02-May",
+      "date": "02-Feb",
       "1N": 5.6,
       "1W": 0.5,
       "1S": 5.3,
@@ -16,7 +17,7 @@ module.exports = [
       "SCU": 6
     },
     {
-      "date": "03-May",
+      "date": "03-Feb",
       "1N": 3.9,
       "1W": 3.6,
       "1S": 1.7,
@@ -24,7 +25,7 @@ module.exports = [
       "SCU": 6
     },
     {
-      "date": "04-May",
+      "date": "04-Feb",
       "1N": 0.9,
       "1W": 5,
       "1S": 5.2,
@@ -32,7 +33,7 @@ module.exports = [
       "SCU": 1.8
     },
     {
-      "date": "05-May",
+      "date": "05-Feb",
       "1N": 0.8,
       "1W": 2.8,
       "1S": 1.4,
@@ -40,7 +41,7 @@ module.exports = [
       "SCU": 4.6
     },
     {
-      "date": "06-May",
+      "date": "06-Feb",
       "1N": 0.7,
       "1W": 6.4,
       "1S": 3.6,
@@ -48,7 +49,7 @@ module.exports = [
       "SCU": 4.8
     },
     {
-      "date": "07-May",
+      "date": "07-Feb",
       "1N": 6.2,
       "1W": 3.9,
       "1S": 3,
@@ -56,7 +57,7 @@ module.exports = [
       "SCU": 6.2
     },
     {
-      "date": "08-May",
+      "date": "08-Feb",
       "1N": 3,
       "1W": 3.5,
       "1S": 5.2,
@@ -64,7 +65,7 @@ module.exports = [
       "SCU": 5.7
     },
     {
-      "date": "09-May",
+      "date": "09-Feb",
       "1N": 5.3,
       "1W": 4.8,
       "1S": 0.6,
@@ -72,7 +73,7 @@ module.exports = [
       "SCU": 1.5
     },
     {
-      "date": "10-May",
+      "date": "10-Feb",
       "1N": 4.1,
       "1W": 4.8,
       "1S": 2.9,
@@ -80,7 +81,7 @@ module.exports = [
       "SCU": 4.5
     },
     {
-      "date": "11-May",
+      "date": "11-Feb",
       "1N": 5.3,
       "1W": 3.9,
       "1S": 1,
@@ -88,7 +89,7 @@ module.exports = [
       "SCU": 2.8
     },
     {
-      "date": "12-May",
+      "date": "12-Feb",
       "1N": 5.1,
       "1W": 1.6,
       "1S": 4.5,
@@ -96,7 +97,7 @@ module.exports = [
       "SCU": 6.3
     },
     {
-      "date": "13-May",
+      "date": "13-Feb",
       "1N": 6,
       "1W": 2.9,
       "1S": 6.3,
@@ -104,7 +105,7 @@ module.exports = [
       "SCU": 4.4
     },
     {
-      "date": "14-May",
+      "date": "14-Feb",
       "1N": 2.1,
       "1W": 6.3,
       "1S": 1.8,
@@ -112,7 +113,7 @@ module.exports = [
       "SCU": 4.8
     },
     {
-      "date": "15-May",
+      "date": "15-Feb",
       "1N": 3.3,
       "1W": 2.9,
       "1S": 5.2,
@@ -120,7 +121,7 @@ module.exports = [
       "SCU": 2
     },
     {
-      "date": "16-May",
+      "date": "16-Feb",
       "1N": 2,
       "1W": 2,
       "1S": 6.1,
@@ -128,7 +129,7 @@ module.exports = [
       "SCU": 1.4
     },
     {
-      "date": "17-May",
+      "date": "17-Feb",
       "1N": 5.8,
       "1W": 4.8,
       "1S": 3.7,
@@ -136,7 +137,7 @@ module.exports = [
       "SCU": 3.9
     },
     {
-      "date": "18-May",
+      "date": "18-Feb",
       "1N": 4.7,
       "1W": 6,
       "1S": 5.4,
@@ -144,7 +145,7 @@ module.exports = [
       "SCU": 6.1
     },
     {
-      "date": "19-May",
+      "date": "19-Feb",
       "1N": 4.8,
       "1W": 3.1,
       "1S": 1.8,
@@ -152,7 +153,7 @@ module.exports = [
       "SCU": 2.8
     },
     {
-      "date": "20-May",
+      "date": "20-Feb",
       "1N": 5.5,
       "1W": 1.4,
       "1S": 5.9,
@@ -160,7 +161,7 @@ module.exports = [
       "SCU": 3.1
     },
     {
-      "date": "21-May",
+      "date": "21-Feb",
       "1N": 5.2,
       "1W": 0.8,
       "1S": 1.6,
@@ -168,7 +169,7 @@ module.exports = [
       "SCU": 4.8
     },
     {
-      "date": "22-May",
+      "date": "22-Feb",
       "1N": 3.1,
       "1W": 1.7,
       "1S": 0.5,
@@ -176,7 +177,7 @@ module.exports = [
       "SCU": 6.2
     },
     {
-      "date": "23-May",
+      "date": "23-Feb",
       "1N": 3,
       "1W": 1,
       "1S": 5,
@@ -184,7 +185,7 @@ module.exports = [
       "SCU": 3.8
     },
     {
-      "date": "24-May",
+      "date": "24-Feb",
       "1N": 2.4,
       "1W": 4.6,
       "1S": 5.3,
@@ -192,7 +193,7 @@ module.exports = [
       "SCU": 1.1
     },
     {
-      "date": "25-May",
+      "date": "25-Feb",
       "1N": 3.7,
       "1W": 5.8,
       "1S": 2.2,
@@ -200,7 +201,7 @@ module.exports = [
       "SCU": 2.8
     },
     {
-      "date": "26-May",
+      "date": "26-Feb",
       "1N": 5.2,
       "1W": 1.7,
       "1S": 2.3,
@@ -208,7 +209,7 @@ module.exports = [
       "SCU": 3
     },
     {
-      "date": "27-May",
+      "date": "27-Feb",
       "1N": 5.8,
       "1W": 6,
       "1S": 3.7,
@@ -216,7 +217,7 @@ module.exports = [
       "SCU": 2.5
     },
     {
-      "date": "28-May",
+      "date": "28-Feb",
       "1N": 2.4,
       "1W": 1.8,
       "1S": 0.7,
@@ -224,7 +225,7 @@ module.exports = [
       "SCU": 3.8
     },
     {
-      "date": "29-May",
+      "date": "29-Feb",
       "1N": 2.7,
       "1W": 2.7,
       "1S": 1,
@@ -232,7 +233,7 @@ module.exports = [
       "SCU": 2.4
     },
     {
-      "date": "30-May",
+      "date": "01-Mar",
       "1N": 1.2,
       "1W": 1.6,
       "1S": 5.2,
@@ -240,7 +241,7 @@ module.exports = [
       "SCU": 4.3
     },
     {
-      "date": "31-May",
+      "date": "02-Mar",
       "1N": 4.7,
       "1W": 2.6,
       "1S": 3.2,
@@ -248,7 +249,7 @@ module.exports = [
       "SCU": 6.2
     },
     {
-      "date": "01-Jun",
+      "date": "03-Mar",
       "1N": 3.4,
       "1W": 6,
       "1S": 1,
@@ -256,7 +257,7 @@ module.exports = [
       "SCU": 1.5
     },
     {
-      "date": "02-Jun",
+      "date": "04-Mar",
       "1N": 4.6,
       "1W": 2.1,
       "1S": 1.3,
@@ -264,7 +265,7 @@ module.exports = [
       "SCU": 0.8
     },
     {
-      "date": "03-Jun",
+      "date": "05-Mar",
       "1N": 1.9,
       "1W": 6,
       "1S": 0.9,
@@ -272,7 +273,7 @@ module.exports = [
       "SCU": 6.7
     },
     {
-      "date": "04-Jun",
+      "date": "06-Mar",
       "1N": 2.2,
       "1W": 3.1,
       "1S": 2.5,
@@ -280,7 +281,7 @@ module.exports = [
       "SCU": 1.2
     },
     {
-      "date": "05-Jun",
+      "date": "07-Mar",
       "1N": 0.7,
       "1W": 4.9,
       "1S": 1.8,
@@ -288,7 +289,7 @@ module.exports = [
       "SCU": 2.2
     },
     {
-      "date": "06-Jun",
+      "date": "08-Mar",
       "1N": 3.3,
       "1W": 2.6,
       "1S": 4.4,
@@ -296,7 +297,7 @@ module.exports = [
       "SCU": 5.8
     },
     {
-      "date": "07-Jun",
+      "date": "09-Mar",
       "1N": 3.5,
       "1W": 1.3,
       "1S": 5.6,
@@ -304,7 +305,7 @@ module.exports = [
       "SCU": 1.2
     },
     {
-      "date": "08-Jun",
+      "date": "10-Mar",
       "1N": 6.4,
       "1W": 4.5,
       "1S": 3,
@@ -312,7 +313,7 @@ module.exports = [
       "SCU": 5.2
     },
     {
-      "date": "09-Jun",
+      "date": "11-Mar",
       "1N": 1,
       "1W": 2.9,
       "1S": 0.5,
@@ -320,7 +321,7 @@ module.exports = [
       "SCU": 3.5
     },
     {
-      "date": "10-Jun",
+      "date": "12-Mar",
       "1N": 5.9,
       "1W": 5.3,
       "1S": 5.3,
@@ -328,7 +329,7 @@ module.exports = [
       "SCU": 1.4
     },
     {
-      "date": "11-Jun",
+      "date": "13-Mar",
       "1N": 1.6,
       "1W": 1.7,
       "1S": 6.6,
@@ -336,7 +337,7 @@ module.exports = [
       "SCU": 1
     },
     {
-      "date": "12-Jun",
+      "date": "14-Mar",
       "1N": 1,
       "1W": 2.8,
       "1S": 4.6,
@@ -344,7 +345,7 @@ module.exports = [
       "SCU": 4.4
     },
     {
-      "date": "13-Jun",
+      "date": "15-Mar",
       "1N": 2.7,
       "1W": 0.8,
       "1S": 3.8,
@@ -352,7 +353,7 @@ module.exports = [
       "SCU": 6.2
     },
     {
-      "date": "14-Jun",
+      "date": "16-Mar",
       "1N": 0.9,
       "1W": 2.2,
       "1S": 6.2,
@@ -360,7 +361,7 @@ module.exports = [
       "SCU": 5.9
     },
     {
-      "date": "15-Jun",
+      "date": "17-Mar",
       "1N": 5.7,
       "1W": 4.3,
       "1S": 1.8,
@@ -368,7 +369,7 @@ module.exports = [
       "SCU": 2.1
     },
     {
-      "date": "16-Jun",
+      "date": "18-Mar",
       "1N": 4.5,
       "1W": 2.9,
       "1S": 6.5,
@@ -376,7 +377,7 @@ module.exports = [
       "SCU": 6.3
     },
     {
-      "date": "17-Jun",
+      "date": "19-Mar",
       "1N": 4.5,
       "1W": 6.4,
       "1S": 1.5,
@@ -384,7 +385,7 @@ module.exports = [
       "SCU": 2.8
     },
     {
-      "date": "18-Jun",
+      "date": "20-Mar",
       "1N": 2.8,
       "1W": 1.5,
       "1S": 4.4,
@@ -392,7 +393,7 @@ module.exports = [
       "SCU": 2.8
     },
     {
-      "date": "19-Jun",
+      "date": "21-Mar",
       "1N": 3.4,
       "1W": 5.7,
       "1S": 4.6,
@@ -400,7 +401,7 @@ module.exports = [
       "SCU": 6.6
     },
     {
-      "date": "20-Jun",
+      "date": "22-Mar",
       "1N": 2.3,
       "1W": 3.2,
       "1S": 4.5,
@@ -408,7 +409,7 @@ module.exports = [
       "SCU": 2.1
     },
     {
-      "date": "21-Jun",
+      "date": "23-Mar",
       "1N": 5.5,
       "1W": 1.9,
       "1S": 3,
@@ -416,7 +417,7 @@ module.exports = [
       "SCU": 4
     },
     {
-      "date": "22-Jun",
+      "date": "24-Mar",
       "1N": 2.1,
       "1W": 2.6,
       "1S": 1.4,
@@ -424,7 +425,7 @@ module.exports = [
       "SCU": 4
     },
     {
-      "date": "23-Jun",
+      "date": "25-Mar",
       "1N": 1.2,
       "1W": 3.3,
       "1S": 3.6,
@@ -432,7 +433,7 @@ module.exports = [
       "SCU": 2.8
     },
     {
-      "date": "24-Jun",
+      "date": "26-Mar",
       "1N": 1.8,
       "1W": 2.7,
       "1S": 3,
@@ -440,7 +441,7 @@ module.exports = [
       "SCU": 5.3
     },
     {
-      "date": "25-Jun",
+      "date": "27-Mar",
       "1N": 1.6,
       "1W": 2.9,
       "1S": 4.7,
@@ -448,7 +449,7 @@ module.exports = [
       "SCU": 6
     },
     {
-      "date": "26-Jun",
+      "date": "28-Mar",
       "1N": 0.5,
       "1W": 6.6,
       "1S": 1.8,
@@ -456,7 +457,7 @@ module.exports = [
       "SCU": 1.4
     },
     {
-      "date": "27-Jun",
+      "date": "29-Mar",
       "1N": 3.2,
       "1W": 5.4,
       "1S": 2.1,
@@ -464,7 +465,7 @@ module.exports = [
       "SCU": 3.4
     },
     {
-      "date": "28-Jun",
+      "date": "30-Mar",
       "1N": 3.8,
       "1W": 2,
       "1S": 0.6,
@@ -472,19 +473,11 @@ module.exports = [
       "SCU": 1.7
     },
     {
-      "date": "29-Jun",
+      "date": "31-Mar",
       "1N": 3,
       "1W": 0.5,
       "1S": 0.7,
       "BP": 2.4,
       "SCU": 0.6
-    },
-    {
-      "date": "30-Jun",
-      "1N": 0.9,
-      "1W": 4.1,
-      "1S": 3.7,
-      "BP": 3.6,
-      "SCU": 4.5
     }
-  ];
+    ];
