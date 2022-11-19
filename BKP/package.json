@@ -18,7 +18,7 @@
     "react-dom": "^16.13.0",
     "react-fontawesome": "^1.7.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0",
+    "react-scripts": "5.0.1",
     "react-select": "^3.1.0",
     "tableau-api": "^2.2.3",
     "underscore": "^1.9.2"
